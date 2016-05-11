@@ -1,5 +1,5 @@
 # selligent-modular-email-template
-A modular email template for Selligent Interactive Marketing. Optimized for SIM Express (v5) and SIM Campaign (v6) 
+A responsive modular email template for Selligent Interactive Marketing. Optimized for SIM Express (v5) and SIM Campaign (v6) 
 
 ## Setup
 
