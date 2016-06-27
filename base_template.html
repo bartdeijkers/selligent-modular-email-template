@@ -114,24 +114,64 @@
 
  </style>
 
- <div contenteditable="true" id="MASECTION" maconstraint="$ID=0" mahidediv="TRUE" maparameter="">
+<div contenteditable="true" id="MASECTION" maconstraint="$ID=0" mahidediv="TRUE" maparameter="">
    <!-- Begin admin extra view -->
    <style type="text/css">
+	   /* SIM v6 hidden element fix */
+     DIV { zoom:1; font-size:0;}
      .wrapper { width:600px !important; }
-     .admin {overflow:auto;max-height:500px;z-index:1000;background:#ffffff;padding:2px;border:1px solid #000001;color:#000001;font-family:Arial,helvetica,sans-serif;font-size:13px;line-height:1;}
+     .admin {position:fixed !important;position:absolute;top:10px;right: 10px;width:400px;padding:1px;overflow:auto;max-height:400px;z-index:1000;background:#ffffff;border:1px solid #000001;color:#000001;font-family:Arial,helvetica,sans-serif;font-size:13px;line-height:1;}
      .admin_row {padding:5px}
      .admin_row:hover {background:#EAF0FA;}
    </style>
-   <div style="position:fixed;top:10px;right: 10px;width:250px;" class="admin">
-     <strong>Preheader:</strong><br /><br />
-     <div contenteditable="true" id="MASECTION" maconstraint="" maparameter="PREHEADER"></div><br />
-     <strong>Blocks:</strong><br /><br />
+   <div id="admin" class="admin">
+     <div id="adminheader" style="font-size:13px;cursor:move;background:#eee;font-weight:bold;padding:5px;">Blocks:</div><br />
      <div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
-       <div contenteditable="TRUE" id="MAITEM" MACLASS="admin_row"><div STYLE="border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'HIDE_DIVIDER')=1,fff,999)~"><span style="font-family:consolas,courier,monotype;font-size:17px;">~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,1,)~~IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,&frac12;,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,&#8531;,)~~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,&frac14;,)~</span> | ~ITEM.REPORTING_TITLE~ <span style="color:#999">~IF(CHKPROP(ITEM.OPTIONS,'ADVERTORIAL')=1,[ad],)~~IF(CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')=1,[no_padding],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_HIDE')=1,[mobile_hide],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,[mobile_full],)~~IF(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,[desktop_right],)~</span></div></div>
+       <div contenteditable="TRUE" id="MAITEM" MACLASS="admin_row"><div STYLE="font-size:13px;border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'HIDE_DIVIDER')=1,fff,999)~"><span style="font-family:consolas,courier,monotype;font-size:13px;">~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,1,)~~IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,&frac12;,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,&#8531;,)~~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,&frac14;,)~</span> | ~ITEM.REPORTING_TITLE~ <span style="color:#999">~IF(CHKPROP(ITEM.OPTIONS,'ADVERTORIAL')=1,[ad],)~~IF(CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')=1,[no_padding],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_HIDE')=1,[mobile_hide],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,[mobile_full],)~~IF(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,[desktop_right],)~</span></div></div>
      </div>
    </div>
    <!-- End admin extra view -->
- </div>
+
+   <script type='text/javascript'>
+
+   var selected = null, // Object of the element to be moved
+       x_pos = 0, y_pos = 0, // Stores x & y coordinates of the mouse pointer
+       x_elem = 0, y_elem = 0; // Stores top, left values (edge) of the element
+
+   // Will be called when user starts dragging an element
+   function _drag_init(elem) {
+       // Store the object of the element which needs to be moved
+       selected = elem;
+       x_elem = x_pos - selected.offsetLeft;
+       y_elem = y_pos - selected.offsetTop;
+   }
+
+   // Will be called when user dragging an element
+   function _move_elem(e) {
+       x_pos = document.all ? window.event.clientX : e.pageX;
+       y_pos = document.all ? window.event.clientY : e.pageY;
+       if (selected !== null) {
+           selected.style.left = (x_pos - x_elem) + 'px';
+           selected.style.top = (y_pos - y_elem) + 'px';
+       }
+   }
+
+   // Destroy the object when we are done
+   function _destroy() {
+       selected = null;
+   }
+
+   // Bind the functions...
+   document.getElementById('adminheader').onmousedown = function () {
+       _drag_init(this.parentNode);
+       return false;
+   };
+
+   document.onmousemove = _move_elem;
+   document.onmouseup = _destroy;
+   </script> 
+
+</div>
 
 
  <!-- Begin preheader -->
