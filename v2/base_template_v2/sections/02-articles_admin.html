@@ -1,0 +1,53 @@
+<div contenteditable="true" id="MASECTION" maconstraint="$ID=0" mahidediv="TRUE" maparameter="">
+   <!-- Begin admin extra view -->
+   <style type="text/css">
+     /* SIM v6 hidden element fix */
+     DIV { zoom:1; font-size:0;}
+     .wrapper { width:600px !important; }
+     .admin {position:absolute !important;top:10px;right: 10px;width:500px;padding:1px;overflow:auto;max-height:500px;z-index:1000;background:#ffffff;border:1px solid #000001;color:#000001;font-family:Arial,helvetica,sans-serif;font-size:13px;line-height:1;}
+
+     #admin {
+       right: expression( ( 10 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+       top: expression( ( 10 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+      }
+     .admin_row {padding:5px}
+     .admin_row:hover {background:#EAF0FA;}
+     .hideAdminContentWrapper { background-color:red; }
+   </style>
+   <div id="admin" class="admin">
+     <div id="adminheader" style="font-size:13px;font-weight:bold;padding:5px;"><a id="closeAdminHeaderbutton" href="javascript:void(0)">[x]</a> Blocks:</div><br />
+     <div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
+       <div contenteditable="TRUE" id="MAITEM" MACLASS="admin_row">
+         <div STYLE="font-size:13px;border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'HIDE_DIVIDER')=1,fff,999)~" class="admin_row_wrapper" style="display:block">
+           <span style="font-family:consolas,courier,monotype;font-size:13px;">~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,1,)~~IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,&frac12;,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,&#8531;,)~~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,&frac14;,)~</span> | ~ITEM.REPORTING_TITLE~ <span style="color:#999">~IF(CHKPROP(ITEM.OPTIONS,'ADVERTORIAL')=1,[ad],)~~IF(CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')=1,[no_padding],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_HIDE')=1,[mobile_hide],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,[mobile_full],)~~IF(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,[desktop_right],)~</span>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- End admin extra view -->
+
+<script type='text/javascript'>
+    // Bind the functions...
+    document.getElementById('closeAdminHeaderbutton').onmousedown = function () {
+      var adminElement  = getElementsByClassName("admin");
+      if(adminElement) {
+        var maxHeight = adminElement[0].style.maxHeight;
+        adminElement[0].style.maxHeight = (maxHeight != "") ? "" : "50px";
+      }
+       return false;
+    };
+
+    function getElementsByClassName(className) {
+      var found = [];
+      var elements = document.getElementsByTagName("*");
+      for (var i = 0; i < elements.length; i++) {
+        var names = elements[i].className.split(' ');
+        for (var j = 0; j < names.length; j++) {
+          if (names[j] == className) found.push(elements[i]);
+        }
+      }
+      return found;
+    }
+</script>
+
+</div>

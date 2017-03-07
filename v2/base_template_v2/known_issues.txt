@@ -1,0 +1,7 @@
+- icon link color fails
+if the link color is not white or black, the icon will not load
+
+- Article text editor adds <p> and/or <br>
+Sometimes the SIM editor adds <p> and/or <br> tags. This means the content sometimes has to much top and/or bottom paddings. To counter this, the SIM user needs to alter the HTML and remove the <p> and/or <br> tags.
+
+- mobile full width in Outlook doesn't work

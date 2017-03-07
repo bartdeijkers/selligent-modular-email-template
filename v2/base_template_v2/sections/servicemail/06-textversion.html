@@ -1,0 +1,49 @@
+<DIV CONTENTEDITABLE=FALSE ID=MASECTION MACONSTRAINT="DYNCONTENT.WEBVERSION_TEXT <> ''" mahidediv="TRUE" MAPARAMETER="" >
+  ~(STRIPHTML(DYNCONTENT.WEBVERSION_TEXT))~
+  ~PROBE(0)~
+  ------------------------------------------------
+</DIV>
+
+
+<div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="CONTENT">
+  <div contenteditable="TRUE" id="MAITEM" mahidediv="TRUE">
+  <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'ADVERTORIAL')=1" mahidediv="TRUE" maparameter="">
+    ~(IF(ITEM.ADVERTORIAL_TEXT='' , 'advertorial' , (STRIPHTML(ITEM.ADVERTORIAL_TEXT))))~
+  </div>
+  ~(STRIPHTML(ITEM.TITLE))~
+  ~(STRIPHTML(ITEM.SUBTITLE))~
+  ~(STRIPHTML(ITEM.CONTENT))~
+  <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL<>''" mahidediv="TRUE" maparameter="">
+    ~PROBE(101)~
+  </div>
+  ------------------------------------------------
+</div>
+</div>
+
+<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.UNSUBSCRIBE_TEXT <> ''" mahidediv="TRUE" maparameter="">
+  ~(STRIPHTML(DYNCONTENT.UNSUBSCRIBE_TEXT))~
+  ~PROBE(103)~
+</div>
+
+<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_1 <> ''" mahidediv="TRUE" maparameter="">
+  ~(STRIPHTML(DYNCONTENT.FOOTER_URL_TEXT_1))~
+  ~PROBE(102)~
+</div>
+
+<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_2 <> ''" mahidediv="TRUE" maparameter="">
+  ~(STRIPHTML(DYNCONTENT.FOOTER_URL_TEXT_2))~
+  ~PROBE(106)~
+</div>
+
+<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_3 <> ''" mahidediv="TRUE" maparameter="">
+  ~(STRIPHTML(DYNCONTENT.FOOTER_URL_TEXT_3))~
+  ~PROBE(104)~
+</div>
+
+<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_4 <> ''" mahidediv="TRUE" maparameter="">
+  ~(STRIPHTML(DYNCONTENT.FOOTER_URL_TEXT_4))~
+  ~PROBE(105)~
+</div>
+
+copyright ~SYSTEM.YEAR~ ~(STRIPHTML(DYNCONTENT.COMPANY_TEXT))~
+~(STRIPHTML(DYNCONTENT.BRAND_TITLE))~ ~(STRIPHTML(DYNCONTENT.PART_OF_TEXT))~

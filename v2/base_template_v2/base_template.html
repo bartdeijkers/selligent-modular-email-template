@@ -1,0 +1,1447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <title>~MESSAGE.SUBJECT~</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--[if !mso]><!-->
+     ~IF($ID<>0,<,)~~IF($ID<>0,meta http-equiv="X-UA-Compatible" content="IE=edge" /,)~~IF($ID<>0,>,)~
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+  <style type="text/css">
+      table {border-collapse: collapse;}
+  </style>
+  <![endif]-->
+
+  ~DYNCONTENT.STYLES~
+ </head>
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing:antialiased;width:100%!important;-webkit-text-size-adjust:none;Margin:0;padding:0;min-width:100%;font-family:Arial,helvetica,sans-serif;">
+
+  <div contenteditable="true" id="MASECTION" maconstraint="$ID=0" mahidediv="TRUE" maparameter="">
+     <!-- Begin admin extra view -->
+     <style type="text/css">
+       /* SIM v6 hidden element fix */
+       DIV { zoom:1; font-size:0;}
+       .wrapper { width:600px !important; }
+       .admin {position:absolute !important;top:10px;right: 10px;width:500px;padding:1px;overflow:auto;max-height:500px;z-index:1000;background:#ffffff;border:1px solid #000001;color:#000001;font-family:Arial,helvetica,sans-serif;font-size:13px;line-height:1;}
+
+       #admin {
+         right: expression( ( 10 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+         top: expression( ( 10 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+        }
+       .admin_row {padding:5px}
+       .admin_row:hover {background:#EAF0FA;}
+       .hideAdminContentWrapper { background-color:red; }
+     </style>
+     <div id="admin" class="admin">
+       <div id="adminheader" style="font-size:13px;font-weight:bold;padding:5px;"><a id="closeAdminHeaderbutton" href="javascript:void(0)">[x]</a> Blocks:</div><br />
+       <div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
+         <div contenteditable="TRUE" id="MAITEM" MACLASS="admin_row">
+           <div STYLE="font-size:13px;border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'HIDE_DIVIDER')=1,fff,999)~" class="admin_row_wrapper" style="display:block">
+             <span style="font-family:consolas,courier,monotype;font-size:13px;">~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,1,)~~IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,&frac12;,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,&#8531;,)~~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,&frac14;,)~</span> | ~ITEM.REPORTING_TITLE~ <span style="color:#999">~IF(CHKPROP(ITEM.OPTIONS,'ADVERTORIAL')=1,[ad],)~~IF(CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')=1,[no_padding],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_HIDE')=1,[mobile_hide],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,[mobile_full],)~~IF(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,[desktop_right],)~</span>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- End admin extra view -->
+
+  <script type='text/javascript'>
+      // Bind the functions...
+      document.getElementById('closeAdminHeaderbutton').onmousedown = function () {
+        var adminElement  = getElementsByClassName("admin");
+        if(adminElement) {
+          var maxHeight = adminElement[0].style.maxHeight;
+          adminElement[0].style.maxHeight = (maxHeight != "") ? "" : "50px";
+        }
+         return false;
+      };
+
+      function getElementsByClassName(className) {
+        var found = [];
+        var elements = document.getElementsByTagName("*");
+        for (var i = 0; i < elements.length; i++) {
+          var names = elements[i].className.split(' ');
+          for (var j = 0; j < names.length; j++) {
+            if (names[j] == className) found.push(elements[i]);
+          }
+        }
+        return found;
+      }
+  </script>
+
+  </div>
+
+
+  <div contenteditable="TRUE" id="MASECTION" maconstraint="SYSTEM.MAIL=1">
+    <!-- Begin webversion -->
+      <table align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" style="padding:0px;">
+            <a class="webfont" href="~PROBE(0)~" style="text-decoration:underline;color:#000001;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;~(IF(DYNCONTENT.WEBVERSION_CSS<>'',(DYNCONTENT.WEBVERSION_CSS),''))~">~DYNCONTENT.WEBVERSION_TEXT~</a>
+          </td>
+        </tr>
+      </table>
+    <!-- End webversion -->
+  </div>
+
+  <!-- Begin shortwelcome_1 -->
+  <DIV id=MASECTION contentEditable=true align=left MACONSTRAINT="SHORTWELCOME=1 AND DYNCONTENT.SHORTWELCOME_1<>''" MASHOWALLLANGUAGES="FALSE">
+    ~DYNCONTENT.SHORTWELCOME_1~
+  </DIV>
+  <!-- Begin shortwelcome_1 -->
+
+  <!-- Begin Optin_2 -->
+  <DIV id=MASECTION contentEditable=true align=left MACONSTRAINT="OPTIN=2 AND DYNCONTENT.OPTIN_2 <> ''" MASHOWALLLANGUAGES="FALSE">
+    ~DYNCONTENT.OPTIN_2~
+  </DIV>
+  <!-- End Optin_2 -->
+
+
+  <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="" mahidediv="TRUE">
+    <!--
+      v2.7.8
+    -->
+  </div>
+
+  <center class="wrapper" style="width: 100%;table-layout: fixed;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;~(IF(DYNCONTENT.BACKGROUND_IMAGE<>'','background-image: url('&DYNCONTENT.BACKGROUND_IMAGE&');background-position: top center; background-repeat: no-repeat;',''))~~(IF(DYNCONTENT.WRAPPER_BACKGROUND_COLOR<>'','background-color:#'&DYNCONTENT.WRAPPER_BACKGROUND_COLOR&';',''))~~DYNCONTENT.WRAPPER_CSS~">
+
+    <div contenteditable="true" id="MASECTION" maconstraint="DYNCONTENT.BACKGROUND_IMAGE<>''"  mahidediv="TRUE" maparameter="">
+      <!--[if gte mso 9]>
+        <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+          <v:fill type="tile" src="~DYNCONTENT.BACKGROUND_IMAGE~" ~(IF(DYNCONTENT.WRAPPER_BACKGROUND_COLOR<>'','color=""#'&DYNCONTENT.WRAPPER_BACKGROUND_COLOR&'""',''))~/>
+        </v:background>
+      <![endif]-->
+    </div>
+
+    <div contenteditable="true" id="MASECTION" maconstraint="DYNCONTENT.BACKGROUND_IMAGE = ''"  mahidediv="TRUE" maparameter="">
+      <!--[if gte mso 9]>
+        <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+          <v:fill type="tile" ~(IF(DYNCONTENT.WRAPPER_BACKGROUND_COLOR<>'','color="#'&DYNCONTENT.WRAPPER_BACKGROUND_COLOR&'"',''))~/>
+        </v:background>
+      <![endif]-->
+    </div>
+
+     <!--[if (gte mso 9)|(IE)]>
+     <table width="100%" align="center">
+       <tr>
+         <td  style="padding:0px;">
+     <![endif]-->
+   	<!-- Begin Header -->
+     <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center" class="" style="~(IF( DYNCONTENT.HEADER_WRAPPER_BACKGROUND_COLOR ='','','background-color:#'&DYNCONTENT.HEADER_WRAPPER_BACKGROUND_COLOR&';'))~">
+       <tr>
+         <td width="100%" bgcolor="~DYNCONTENT.HEADER_WRAPPER_BACKGROUND_COLOR~" valign="top" align="center">
+
+           <!--[if (gte mso 9)|(IE)]>
+           <table width="600" align="center">
+             <tr>
+               <td  style="padding:0px;">
+           <![endif]-->
+              <!-- Begin Header content -->
+             <table cellpadding="0" cellspacing="0" border="0" align="center" class="outer" style="Margin: 0 auto; width: 100%; max-width: 600px;~(IF( DYNCONTENT.HEADER_BACKGROUND_COLOR ='','','background-color:#'&DYNCONTENT.HEADER_BACKGROUND_COLOR&';'))~">
+              <tr>
+                <td class="fullWidth" bgcolor="~DYNCONTENT.HEADER_BACKGROUND_COLOR~" >
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" style="clear:both;font-family:Arial,helvetica,sans-serif;font-size:18px;line-height:1.4;max-width:600px;" width="100%">
+                    <tr>
+                      <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="~(IF(DYNCONTENT.LOGO_ALIGN<>'',DYNCONTENT.LOGO_ALIGN,'center'))~" width="100%" style="max-width:600px;padding-left:10px;padding-right:10px;" class="logo">
+            						<div id="masection" contenteditable="true" maconstraint="DYNCONTENT.LOGO <> '' OR ID=0" mahidediv="true" mashowalllanguages="false">
+
+            							<div id="masection" contenteditable="false" maconstraint="DYNCONTENT.LOGO_URL = ''" mahidediv="true" mashowalllanguages="false">
+            								<img width="~(IF(DYNCONTENT.LOGO_MAX_WIDTH<>'',DYNCONTENT.LOGO_MAX_WIDTH,'580'))~" border="0" style="display:block;width:100%;max-width:~(IF(DYNCONTENT.LOGO_MAX_WIDTH<>'',DYNCONTENT.LOGO_MAX_WIDTH,'580'))~px !important;height:auto;" src="~DYNCONTENT.LOGO~" class="imageResize" alt="">
+            							</div>
+
+            							<div id="masection" contenteditable="false" maconstraint="DYNCONTENT.LOGO_URL <> ''" mahidediv="true" mashowalllanguages="false">
+            								<a href="~PROBE(300)~" target="_blank"><img width="~(IF(DYNCONTENT.LOGO_MAX_WIDTH<>'',DYNCONTENT.LOGO_MAX_WIDTH,'580'))~" border="0" style="display:block;width:100%;max-width:~(IF(DYNCONTENT.LOGO_MAX_WIDTH<>'',DYNCONTENT.LOGO_MAX_WIDTH,'580'))~px !important;height:auto;" src="~DYNCONTENT.LOGO~" class="imageResize" alt=""></a>
+            							</div>
+
+            						</div>
+          					</td>
+                    </tr>
+
+                    <div contenteditable="true" id="MASECTION" maconstraint="DYNCONTENT.HEADER <>''"  mahidediv="TRUE" maparameter="">
+             					<tr>
+             						<td align="center" width="100%" style="max-width:600px;padding-left:10px;padding-right:10px;">~DYNCONTENT.HEADER~</td>
+             					</tr>
+                    </div>
+
+  							    <tr>
+                      <td colspan="2" height="16" style="font-size:16px;line-height:16px;padding:0px;">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+             </table>
+             <!-- End Header content -->
+       <!--[if (gte mso 9)|(IE)]>
+             </td>
+           </tr>
+         </table>
+       <![endif]-->
+         </td>
+       </tr>
+     </table>
+   <!-- End Header -->
+     <!--[if (gte mso 9)|(IE)]>
+           </td>
+         </tr>
+       </table>
+     <![endif]-->
+
+  <!-- Begin content wrapper -->
+  <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="~DYNCONTENT.CONTENT_WRAPPER_BACKGROUND_COLOR~"><tr><td width="100%" align="center">
+   <div class="webkit" style="max-width: 600px;~(IF(DYNCONTENT.CONTENT_BACKGROUND_COLOR <> '' , ('background-color:#'&DYNCONTENT.CONTENT_BACKGROUND_COLOR),''))~">
+   <!--[if (gte mso 9)|(IE)]>
+   <table width="600" align="center">
+     <tr>
+       <td  style="padding:0px;" ~(IF(DYNCONTENT.CONTENT_BACKGROUND_COLOR <>'',('bgcolor="#'&DYNCONTENT.CONTENT_BACKGROUND_COLOR&'"'),''))~>
+   <![endif]-->
+
+
+       <!-- Begin content -->
+       <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+         ~('<')~table cellpadding="0" cellspacing="0" border="0" align="center" class="outer" style="Margin: 0 auto; width: 100%; max-width: 600px;" ~('>')~
+       </div>
+
+          <div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
+            <div contenteditable="TRUE" id="MAITEM" mahidediv="TRUE">
+            <!-- Begin Article -->
+
+             <div contenteditable="true" id="MASECTION" maconstraint="CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1" mahidediv="TRUE" maparameter="">
+             <!-- Begin Full width start hacks -->
+
+               <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+               ~('<')~tr~('>')~~('<')~td class="fullWidth" style="padding:0px;" ~('>')~
+               </div>
+
+             <!-- End Full width start hacks -->
+             </div>
+
+             <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ITEM.BLOCKTYPE,9)='HALFWIDTH'" mahidediv="TRUE" maparameter="">
+             <!-- Begin Half width start hacks -->
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),9)='HALFWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-10, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-13, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),9)<>'HALFWIDTH')))))))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),9)<>'HALFWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin start first half width outlook hack -->
+
+                 <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+                 ~('<')~tr~('>')~~('<')~td class="~IF(CHARINDEX('SIXTH',ITEM.BLOCKTYPE)=-1 AND CHARINDEX('THIRD',ITEM.BLOCKTYPE)=-1,halfWidth,)~~IF(CHARINDEX('SIXTH',ITEM.BLOCKTYPE)<>-1,sixthWidth,)~~IF(CHARINDEX('THIRD',ITEM.BLOCKTYPE)<>-1,thirdWidth,)~" style="padding:0px;text-align: center;font-size: 0;" ~if(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,dir="rtl",)~ ~('>')~
+                 </div>
+                 <!--[if (gte mso 9)|(IE)]>
+                   <TABLE  WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" ~if(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,dir="rtl",)~>
+                     <tr>
+                       <td valign="top" width="~IF(CHARINDEX('ONESIXTH',ITEM.BLOCKTYPE)<>-1,100,)~~IF(CHARINDEX('FIVESIXTH',ITEM.BLOCKTYPE)<>-1,500,)~~IF(CHARINDEX('ONETHIRD',ITEM.BLOCKTYPE)<>-1,200,)~~IF(CHARINDEX('TWOTHIRD',ITEM.BLOCKTYPE)<>-1,400,)~~IF(CHARINDEX('SIXTH',ITEM.BLOCKTYPE)=-1 AND CHARINDEX('THIRD',ITEM.BLOCKTYPE)=-1,50%,)~" style="padding:0px;">
+                 <![endif]-->
+
+               <!-- End start first half width outlook hack -->
+               </div>
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),9)='HALFWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-10, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-13, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-18, 'BLOCKTYPE'),9)<>'HALFWIDTH')))))))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),9)<>'HALFWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin second half width outlook hack -->
+
+                 <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td valign="top" width="~(IF(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1,'BLOCKTYPE')='HALFWIDTH_ONESIXTH','500',''))~~(IF(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1,'BLOCKTYPE')='HALFWIDTH_FIVESIXTH','100',''))~~(IF(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1,'BLOCKTYPE')='HALFWIDTH_ONETHIRD','400',''))~~(IF(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1,'BLOCKTYPE')='HALFWIDTH_TWOTHIRD','200',''))~~(IF(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1,'BLOCKTYPE')='HALFWIDTH','50%',''))~" style="padding:0px;">
+                 <![endif]-->
+
+               <!-- End second half width outlook hack -->
+               </div>
+
+             <!-- End Half width start hacks -->
+             </div>
+
+             <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ITEM.BLOCKTYPE,10)='THIRDWIDTH'" mahidediv="TRUE" maparameter="">
+             <!-- Begin Third width start hacks -->
+
+                <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),10)='THIRDWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+3, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-10, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-13, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-18, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-19, 'BLOCKTYPE'),10)<>'THIRDWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+3, 'BLOCKTYPE'),10)<>'THIRDWIDTH'))" mahidediv="TRUE" maparameter="">
+                <!-- Begin first third width outlook hack -->
+
+                  <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+                  ~('<')~tr~('>')~~('<')~td class="thirdWidth"  style="padding:0px;font-size: 0;text-align: center;" ~if(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,dir="rtl",)~ ~('>')~
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                    <TABLE  WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" ~if(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,dir="rtl",)~>
+                      <tr>
+                        <td width="200" valign="top"  style="padding:0px;">
+                  <![endif]-->
+
+                <!-- End first third width outlook hack -->
+                </div>
+
+                <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-10, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-13, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-19, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-20, 'BLOCKTYPE'),10)<>'THIRDWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),10)<>'THIRDWIDTH'))" mahidediv="TRUE" maparameter="">
+                <!-- Begin second third width outlook hack -->
+
+                  <!--[if (gte mso 9)|(IE)]>
+                     </td>
+                     <td width="200" valign="top"  style="padding:0px;">
+                  <![endif]-->
+
+                <!-- End second third width outlook hack -->
+                </div>
+
+                <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-18, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-20, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-21, 'BLOCKTYPE'),10)<>'THIRDWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),10)<>'THIRDWIDTH'))" mahidediv="TRUE" maparameter="">
+                <!-- Begin last third width outlook hack -->
+
+                  <!--[if (gte mso 9)|(IE)]>
+                     </td>
+                     <td width="200" valign="top"  style="padding:0px;">
+                  <![endif]-->
+
+                <!-- End last third width outlook hack -->
+                </div>
+
+             <!-- End Third width start hacks -->
+             </div>
+
+             <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ITEM.BLOCKTYPE,12)='QUARTERWIDTH'" mahidediv="TRUE" maparameter="">
+              <!-- Begin quarter width start hacks -->
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+3, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+4, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-13, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-20, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-21, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-24, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-25, 'BLOCKTYPE'),12)<>'QUARTERWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+4, 'BLOCKTYPE'),12)<>'QUARTERWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin first quarter width outlook hack -->
+
+                 <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+                 ~('<')~tr~('>')~~('<')~td class="quarterWidth"  style="padding:0px;font-size: 0;text-align: center;" ~if(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,dir="rtl",)~ ~('>')~
+                 </div>
+                 <!--[if (gte mso 9)|(IE)]>
+                   <TABLE  WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" ~if(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,dir="rtl",)~>
+                     <tr>
+                       <td width="150" valign="top"  style="padding:0px;">
+                 <![endif]-->
+
+               <!-- End first quarter width outlook hack -->
+               </div>
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+3, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-10, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-13, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-18, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-21, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-22, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-25, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-26, 'BLOCKTYPE'),12)<>'QUARTERWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+3, 'BLOCKTYPE'),12)<>'QUARTERWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin second quarter width outlook hack -->
+
+                 <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td width="150" valign="top"  style="padding:0px;">
+                 <![endif]-->
+
+               <!-- End second quarter width outlook hack -->
+               </div>
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-10, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-18, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-19, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-22, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-23, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-26, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-27, 'BLOCKTYPE'),12)<>'QUARTERWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+2, 'BLOCKTYPE'),12)<>'QUARTERWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin third quarter width outlook hack -->
+
+                 <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td width="150" valign="top"  style="padding:0px;">
+                 <![endif]-->
+
+               <!-- End third quarter width outlook hack -->
+               </div>
+
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-19, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-20, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-23, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-24, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-27, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-28, 'BLOCKTYPE'),12)<>'QUARTERWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),12)<>'QUARTERWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin last quarter width outlook hack -->
+
+                 <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    <td width="150" valign="top"  style="padding:0px;">
+                 <![endif]-->
+
+               <!-- End last quarter width outlook hack -->
+               </div>
+
+             <!-- End quarter width start hacks -->
+             </div>
+
+             <div class="column ~IF(CHARINDEX('TWOTHIRD',ITEM.BLOCKTYPE)<>-1,twothirdWidth,)~~IF(CHARINDEX('ONESIXTH',ITEM.BLOCKTYPE)<>-1,onesixthWidth,)~~IF(CHARINDEX('FIVESIXTH',ITEM.BLOCKTYPE)<>-1,fivesixthWidth,)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_HIDE')=1, mobileErase,)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1, mobileFullwidth,)~" style="width:100%;max-width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,150px,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,200px,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',300px,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',200px,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',400px,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',100px,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',500px,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,600px,)~;display:inline-block;vertical-align: top;" ~if(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,dir="ltr",)~>
+             <!-- Begin column -->
+               <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                 <tr>
+                   <td style="~IF(CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')<>1,padding-left:10px;padding-right:10px;,)~" ~(IF(CHKPROP(ITEM.OPTIONS,'FILL_PADDING_BACKGROUND_COLOR')=1 AND ITEM.BACKGROUND_COLOR<>'',('bgcolor="#'&ITEM.BACKGROUND_COLOR&'"'),''))~>
+                     <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'ADD_PADDING_TOP')=1" mahidediv="TRUE" maparameter="">
+                       <!-- Begin extra whitespace -->
+                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                           <tr>
+                           <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                           </tr>
+                         </table>
+                       <!-- End extra whitespace -->
+                     </div>
+                     <table width="100%" ~(IF(ITEM.BACKGROUND_COLOR<>'',('bgcolor="#'&ITEM.BACKGROUND_COLOR&'"'),''))~ style="~(IF(ITEM.BORDER_COLOR<>'',('border:1px solid #'&ITEM.BORDER_COLOR&';'),('')))~" border="0" cellpadding="0" cellspacing="0" valign="top">
+                       <tr>
+                         <td>
+
+                           <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'ADVERTORIAL')=1" mahidediv="TRUE" maparameter="">
+                             <!-- Begin Advertorial -->
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                             <tr>
+                               <td align="center" valign="top" width="100%"  style="padding:0px;">
+                               <table width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;height:auto;" class="fullWidth">
+                                 <tr>
+                                 <td bgcolor="~(IF(DYNCONTENT.ADVERTORIAL_BACKGROUND_COLOR='','#cccccc',(DYNCONTENT.ADVERTORIAL_BACKGROUND_COLOR)))~" style="padding-top:5px;padding-bottom:5px;font-family:Arial,helvetica,sans-serif;font-size:13px;line-height:1.4;font-weight:bold;color:#~(IF(ITEM.CONTENT_COLOR<>'',(ITEM.CONTENT_COLOR),('000001')))~;text-align:center;~DYNCONTENT.ADVERTORIAL_CSS~" valign="bottom">
+                                   <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL=''" mahidediv="TRUE" maparameter="">
+                                     <span class="webfont" style="~DYNCONTENT.ADVERTORIAL_TEXT_CSS~">~(IF(ITEM.ADVERTORIAL_TEXT='' , 'advertorial' , (ITEM.ADVERTORIAL_TEXT)))~</span>
+                                   </div>
+                                   <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL<>''" mahidediv="TRUE" maparameter="">
+                                    <a class="webfont" href="~PROBE(101)~" style="color:#~(IF(ITEM.CONTENT_COLOR<>'',(ITEM.CONTENT_COLOR),('000001')))~;TEXT-DECORATION: none;~DYNCONTENT.ADVERTORIAL_TEXT_CSS~" target="_blank">~(IF(ITEM.ADVERTORIAL_TEXT='' , 'advertorial' , (ITEM.ADVERTORIAL_TEXT)))~</a>
+                                   </div>
+                                 </td>
+                                 </tr>
+                               </table>
+                               </td>
+                             </tr>
+                             </table>
+                             <!-- End Advertorial -->
+                           </div>
+
+
+
+               						<div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'TITLE_IMAGE')<>1" mahidediv="TRUE" maparameter="">
+                            <!-- Begin TITLE_IMAGE -->
+               							<div contenteditable="true" id="MASECTION" maconstraint="ITEM.IMAGE<>''" mahidediv="TRUE" maparameter="">
+                              <!-- Begin Image -->
+                 							  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                   								<tr>
+                   								  <td align="center" valign="top" width="100%"  style="padding:0px;">
+                                        <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')<>1" mahidediv="TRUE" maparameter="">
+                                          ~(IF(ITEM.LINK_URL<>'','<a href="~PROBE(101)~" target="_blank">',''))~
+                                            <img alt="~(IF(ITEM.IMAGE_ALT_TEXT<>'',STRIPHTML(ITEM.IMAGE_ALT_TEXT),STRIPHTML(ITEM.TITLE)))~" border="0" class="~(IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,'mobileFullwidth','imageResize'))~" src="~ITEM.IMAGE~" style="display:block;width:100%;max-width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,130,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',280,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',380,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',80,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',480,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,580,)~px;height:auto;" width="~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,130,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',280,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',380,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',80,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',480,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,580,)~">
+                                          ~(IF(ITEM.LINK_URL<>'','</a>',''))~
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')=1" mahidediv="TRUE" maparameter="">
+                                          ~(IF(ITEM.LINK_URL<>'','<a href="~PROBE(101)~" target="_blank">',''))~
+                                            <img alt="~(IF(ITEM.IMAGE_ALT_TEXT<>'',STRIPHTML(ITEM.IMAGE_ALT_TEXT),STRIPHTML(ITEM.TITLE)))~" border="0" class="~(IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,'mobileFullwidth','imageResize'))~" src="~ITEM.IMAGE~" style="display:block;width:100%;max-width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,150,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',300,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',400,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',500,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,600,)~px;height:auto;" width="~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,150,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',300,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',400,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',500,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,600,)~">
+                                          ~(IF(ITEM.LINK_URL<>'','</a>',''))~
+                                        </div>
+                   								  </td>
+                   								</tr>
+
+                                  <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'ADD_PADDING_BOTTOM_IMAGE')=1" mahidediv="TRUE" maparameter="">
+                                    <tr>
+                                      <td height="16" style="font-size:16px;line-height:16px;padding:0px;">&nbsp;</td>
+                                    </tr>
+                                  </div>
+                 							  </table>
+                              <!-- End Image-->
+               							</div>
+                             <!-- END TITLE_IMAGE -->
+               						</div>
+
+
+
+                           <div contenteditable="true" id="MASECTION" maconstraint="TRIM(ITEM.TITLE)<>''  AND TRIM(ITEM.TITLE)<>'<br />'" mahidediv="TRUE" maparameter="">
+                             <!-- Begin Title -->
+
+                             <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'TITLE_TOP_PADDING')=1" mahidediv="TRUE" maparameter="">
+                               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                 <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                 </tr>
+                               </table>
+                             </div>
+
+
+                             <div contenteditable="true" id="MASECTION" maconstraint="((ITEM.BORDER_COLOR<>'' AND ITEM.BORDER_COLOR<>'ffffff') OR (ITEM.BACKGROUND_COLOR<>'' AND ITEM.BACKGROUND_COLOR<>'ffffff')) AND ITEM.IMAGE=''" mahidediv="TRUE" maparameter="">
+                               <!-- Begin extra whitespace title block -->
+                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                   <tr>
+                                   <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                   </tr>
+                                 </table>
+                               <!-- End extra whitespace title block -->
+                             </div>
+
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                             <tr>
+                               <td align="~IF(CHKPROP(ITEM.OPTIONS,'CENTER_TITLE')=1,center,left)~" style="padding-left:10px;padding-right:10px;line-height:1.2;" valign="bottom">
+                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL=''" mahidediv="TRUE" maparameter="">
+                                 <span class="webfont_title" style="font-family:Arial,helvetica,sans-serif;font-size:20px;font-weight:bold;color:#~(IF(ITEM.TITLE_COLOR<>'',(ITEM.TITLE_COLOR),('000001')))~;~(IF(ITEM.TITLE_CSS<>'',(ITEM.TITLE_CSS),''))~">~(TRIM(ITEM.TITLE))~</span>
+                               </div>
+                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL<>''" mahidediv="TRUE" maparameter="">
+                                 <a class="webfont_title" href="~PROBE(101)~" style="font-family:Arial,helvetica,sans-serif;font-size:20px;font-weight:bold;TEXT-DECORATION: none;color:#~(IF(ITEM.TITLE_COLOR<>'',(ITEM.TITLE_COLOR),('000001')))~;~(IF(ITEM.TITLE_CSS<>'',(ITEM.TITLE_CSS),''))~" target="_blank"><FONT COLOR="#~(IF(ITEM.TITLE_COLOR<>'',(ITEM.TITLE_COLOR),('000001')))~" style="color:#~(IF(ITEM.TITLE_COLOR<>'',(ITEM.TITLE_COLOR),('000001')))~;">~(TRIM(ITEM.TITLE))~</FONT></a>
+                               </div>
+                               </td>
+                             </tr>
+
+                             <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'TITLE_BOTTOM_PADDING')=1" mahidediv="TRUE" maparameter="">
+                               <tr>
+                                 <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                               </tr>
+                             </div>
+
+                             </table>
+                             <!-- End Title -->
+                           </div>
+
+
+                           <div contenteditable="true" id="MASECTION" maconstraint="TRIM(ITEM.SUBTITLE)<>'' AND TRIM(ITEM.SUBTITLE)<>'<br />'" mahidediv="TRUE" maparameter="">
+                             <!-- Begin SubTitle -->
+
+                             <div contenteditable="true" id="MASECTION" maconstraint="((ITEM.BORDER_COLOR<>'' AND ITEM.BORDER_COLOR<>'ffffff') OR (ITEM.BACKGROUND_COLOR<>'' AND ITEM.BACKGROUND_COLOR<>'ffffff')) AND ITEM.IMAGE=''" mahidediv="TRUE" maparameter="">
+                               <!-- Begin extra whitespace title block -->
+                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                   <tr>
+                                   <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                   </tr>
+                                 </table>
+                               <!-- End extra whitespace title block -->
+                             </div>
+
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                               <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'SUBTITLE_TOP_PADDING')=1" mahidediv="TRUE" maparameter="">
+                                 <tr>
+                                   <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                 </tr>
+                               </div>
+
+                             <tr>
+                               <td align="~IF(CHKPROP(ITEM.OPTIONS,'CENTER_SUBTITLE')=1,center,left)~" style="padding-left:10px;padding-right:10px;line-height:1.2;" valign="bottom">
+                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL=''" mahidediv="TRUE" maparameter="">
+                                 <span class="webfont_subtitle" style="font-family:Arial,helvetica,sans-serif;font-size:16px;font-weight:bold;color:#~(IF(ITEM.SUBTITLE_COLOR<>'',(ITEM.SUBTITLE_COLOR),('000001')))~;~(IF(ITEM.SUBTITLE_CSS<>'',(ITEM.SUBTITLE_CSS),''))~">~(TRIM(ITEM.SUBTITLE))~</span>
+                               </div>
+
+
+
+                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL<>''" mahidediv="TRUE" maparameter="">
+                                 <a class="webfont_subtitle" href="~PROBE(101)~" style="font-family:Arial,helvetica,sans-serif;font-size:16px;font-weight:bold;TEXT-DECORATION: none;color:#~(IF(ITEM.SUBTITLE_COLOR<>'',(ITEM.SUBTITLE_COLOR),('000001')))~;~(IF(ITEM.SUBTITLE_CSS<>'',(ITEM.SUBTITLE_CSS),''))~" target="_blank"><FONT COLOR="#~(IF(ITEM.SUBTITLE_COLOR<>'',(ITEM.SUBTITLE_COLOR),('000001')))~" style="color:#~(IF(ITEM.SUBTITLE_COLOR<>'',(ITEM.SUBTITLE_COLOR),('000001')))~;~(IF(ITEM.SUBTITLE_CSS<>'',(ITEM.SUBTITLE_CSS),''))~">~(TRIM(ITEM.SUBTITLE))~</FONT></a>
+                               </div>
+                               </td>
+                             </tr>
+                             <tr>
+                               <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                             </tr>
+                             </table>
+                             <!-- End SubTitle -->
+                           </div>
+
+
+               						<div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'TITLE_IMAGE')=1" mahidediv="TRUE" maparameter="">
+                              <!-- Begin TITLE_IMAGE -->
+               							<div contenteditable="true" id="MASECTION" maconstraint="ITEM.IMAGE<>''" mahidediv="TRUE" maparameter="">
+                              <!-- Begin Image -->
+                 							  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                   								<tr>
+                   								  <td align="center" valign="top" width="100%"  style="padding:0px;">
+                                        <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')<>1" mahidediv="TRUE" maparameter="">
+                                          ~(IF(ITEM.LINK_URL<>'','<a href="~PROBE(101)~" target="_blank">',''))~
+                                            <img alt="~(IF(ITEM.IMAGE_ALT_TEXT<>'',STRIPHTML(ITEM.IMAGE_ALT_TEXT),STRIPHTML(ITEM.TITLE)))~" border="0" class="~(IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,'mobileFullwidth','imageResize'))~" src="~ITEM.IMAGE~" style="display:block;width:100%;max-width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,130,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',280,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',380,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',80,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',480,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,580,)~px;height:auto;" width="~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,130,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',280,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',380,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',80,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',480,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,580,)~">
+                                          ~(IF(ITEM.LINK_URL<>'','</a>',''))~
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')=1" mahidediv="TRUE" maparameter="">
+                                          ~(IF(ITEM.LINK_URL<>'','<a href="~PROBE(101)~" target="_blank">',''))~
+                                            <img alt="~(IF(ITEM.IMAGE_ALT_TEXT<>'',STRIPHTML(ITEM.IMAGE_ALT_TEXT),STRIPHTML(ITEM.TITLE)))~" border="0" class="~(IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,'mobileFullwidth','imageResize'))~" src="~ITEM.IMAGE~" style="display:block;width:100%;max-width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,150,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',300,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',400,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',500,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,600,)~px;height:auto;" width="~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,150,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',300,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',400,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',500,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,600,)~">
+                                          ~(IF(ITEM.LINK_URL<>'','</a>',''))~
+                                        </div>
+                   								  </td>
+                   								</tr>
+
+                                  <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'ADD_PADDING_BOTTOM_IMAGE')=1" mahidediv="TRUE" maparameter="">
+                                    <tr>
+                                      <td height="16" style="font-size:16px;line-height:16px;padding:0px;">&nbsp;</td>
+                                    </tr>
+                                  </div>
+                 							  </table>
+                              <!-- End Image-->
+               							</div>
+                              <!-- END TITLE_IMAGE -->
+               						</div>
+
+
+
+                           <div contenteditable="true" id="MASECTION" maconstraint="(TRIM(ITEM.CONTENT))<>'' AND (TRIM(ITEM.CONTENT))<>'<br />'  AND (TRIM(ITEM.CONTENT))<>'<br>'   AND (TRIM(ITEM.CONTENT))<>'<br/>'" mahidediv="TRUE" maparameter="">
+                           <!-- Begin content -->
+                             <div contenteditable="true" id="MASECTION" maconstraint="((ITEM.BORDER_COLOR<>'' AND ITEM.BORDER_COLOR<>'ffffff') OR (ITEM.BACKGROUND_COLOR<>'' AND ITEM.BACKGROUND_COLOR<>'ffffff')) AND ITEM.IMAGE='' AND ITEM.TITLE='' AND ITEM.SUBTITLE" mahidediv="TRUE" maparameter="">
+                             <!-- Begin extra whitespace content block -->
+                               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                   <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                 </tr>
+                               </table>
+                             <!-- End extra whitespace content block -->
+                             </div>
+
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                               <tr>
+                                 <td class='article_field_content' align="~IF(CHKPROP(ITEM.OPTIONS,'CENTER_CONTENT')=1,center,left)~" style="padding-left:10px;padding-right:10px;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;-webkit-text-size-adjust:none;~ITEM.CONTENT_CSS~" valign="top">
+
+                                   <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL='' OR (ITEM.LINK_URL<>'' AND CHARINDEX('HREF' , UCASE(ITEM.CONTENT)) <> -1)" mahidediv="TRUE" maparameter="">
+                                     <span class="webfont" style="color:#~(IF(ITEM.CONTENT_COLOR<>'',(ITEM.CONTENT_COLOR),('000001')))~ !important;"><FONT COLOR="#~(IF(ITEM.CONTENT_COLOR<>'',(ITEM.CONTENT_COLOR),('000001')))~">~(TRIM(ITEM.CONTENT))~</FONT></span>
+                                   </div>
+
+                                   <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL<>'' AND CHARINDEX('HREF' , UCASE(ITEM.CONTENT)) = -1" mahidediv="TRUE" maparameter="">
+                                       <a class="webfont" href="~PROBE(101)~" style="color:#~(IF(ITEM.CONTENT_COLOR<>'',(ITEM.CONTENT_COLOR),('000001')))~ !important;TEXT-DECORATION: none;" target="_blank"><FONT COLOR="#~(IF(ITEM.CONTENT_COLOR<>'',(ITEM.CONTENT_COLOR),('000001')))~">~(TRIM(ITEM.CONTENT))~</FONT></a>
+                                   </div>
+
+                                 </td>
+                               </tr>
+                               <tr>
+                                 <td height="16" style="font-size:16px;line-height:16px;padding:0px;">&nbsp;</td>
+                               </tr>
+                             </table>
+
+                           <!-- End content -->
+                           </div>
+
+                           <div contenteditable="true" id="MASECTION" maconstraint="((CHKPROP(ITEM.OPTIONS,'SOCIAL_FB')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_TWITTER')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_INSTAGRAM')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_YOUTUBE')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_PINTEREST')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_WHATSAPP')=1)  OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_GOOGLEPLUS')=1)) AND ITEM.LINK_URL <> ''" mahidediv="TRUE" maparameter="">
+                             <!-- Begin social share icons -->
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                               <tr>
+                                 <td align="center" style="padding-left:10px;padding-right:10px;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;-webkit-text-size-adjust:none;" valign="top">
+                                    <table>
+                                      <tr>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_FB')=1) AND (DYNCONTENT.SHARE_FB_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            &nbsp;<a href="~PROBE(600)~">~DYNCONTENT.SHARE_FB_ICON~</a>&nbsp;
+                                          </td>
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_TWITTER')=1) AND (DYNCONTENT.SHARE_TWITTER_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            &nbsp;<a href="~PROBE(601)~">~DYNCONTENT.SHARE_TWITTER_ICON~</a>&nbsp;
+                                          </td>
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_INSTAGRAM')=1) AND (DYNCONTENT.SHARE_INSTAGRAM_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            &nbsp;<a href="~PROBE(602)~">~DYNCONTENT.SHARE_INSTAGRAM_ICON~</a>&nbsp;
+                                          </td>
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_YOUTUBE')=1) AND (DYNCONTENT.SHARE_YOUTUBE_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            &nbsp;<a href="~PROBE(603)~">~DYNCONTENT.SHARE_YOUTUBE_ICON~</a>&nbsp;
+                                          </td>
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_PINTEREST')=1) AND (DYNCONTENT.SHARE_PINTEREST_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            &nbsp;<a href="~PROBE(604)~">~DYNCONTENT.SHARE_PINTEREST_ICON~</a>&nbsp;
+                                          </td>
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_GOOGLEPLUS')=1) AND (DYNCONTENT.SHARE_GOOGLEPLUS_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            &nbsp;<a href="~PROBE(606)~">~DYNCONTENT.SHARE_GOOGLEPLUS_ICON~</a>&nbsp;
+                                          </td>
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_WHATSAPP')=1) AND (DYNCONTENT.SHARE_WHATSAPP_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            <span class="mobileShow" style="display: none;mso-hide:all;">&nbsp;<a href="~PROBE(605)~">~DYNCONTENT.SHARE_WHATSAPP_ICON~</a>&nbsp;</span>
+                                          </td>
+                                        </div>
+                                        <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_MAIL')=1) AND (DYNCONTENT.SHARE_MAIL_ICON<>'')" mahidediv="TRUE" maparameter="">
+                                          <td>
+                                            &nbsp;<a href="~PROBE(607)~">~DYNCONTENT.SHARE_MAIL_ICON~</a>&nbsp;
+                                          </td>
+                                        </div>
+                                      </tr>
+                                    </table>
+
+                                 </td>
+                               </tr>
+                               <tr>
+                                 <td height="16" style="font-size:16px;line-height:16px;padding:0px;">&nbsp;</td>
+                               </tr>
+                             </table>
+                             <!-- END social share icons -->
+                           </div>
+
+                           <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK_URL<>'' AND ITEM.LINK_TEXT<>'' AND (ITEM.BUTTON_TYPE <> 'NONE' AND ITEM.BUTTON_TYPE <> '')" mahidediv="TRUE" maparameter="">
+                             <!-- Begin Button -->
+                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_TYPE = 'BLOCK'" mahidediv="TRUE" maparameter="">
+                                 <!-- Begin Normal Button -->
+
+                                     <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_POSITION = 'FULLWIDTH' OR ITEM.BUTTON_POSITION = ''" mahidediv="TRUE" maparameter="">
+                                       <!-- Begin Fullwidth button -->
+                                           <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                           <tr>
+                                             <td align="center" valign="top">
+                                               <div><!--[if mso]>
+                                                 <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1" mahidediv="TRUE" maparameter="">
+                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="~PROBE(101)~" style="height:;v-text-anchor:middle;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,110,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,150,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',260,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',160,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',360,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',60,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',460,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,560,)~px;~ITEM.BUTTON_OUTLOOK_CSS~" arcsize="0%" stroke="f" ~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('fillcolor="#'&ITEM.BUTTON_BACKGROUND_COLOR&'"'),''))~>
+                                                 </div>
+                                                 <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')<>1" mahidediv="TRUE" maparameter="">
+                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="~PROBE(101)~" style="height:px;v-text-anchor:middle;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,122,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,175,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',276,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',380,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',80,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',480,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,579,)~px;~ITEM.BUTTON_OUTLOOK_CSS~" arcsize="0%" stroke="f" ~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('fillcolor="#'&ITEM.BUTTON_BACKGROUND_COLOR&'"'),''))~>
+                                                 </div>
+                                                    <w:anchorlock/>
+                                                      <v:textbox inset="0,0,0,0" style="font-size: 0;line-height:0;mso-fit-shape-to-text:true;">
+                                                         <center style="font-size: 0;line-height:0;">
+                                                           <table width="100%" border='0' cellpadding="0" cellspacing="0" style="width:100%;padding:5px;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'5'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'5'))~px;">
+
+                                                            <tr>
+                                                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT')" mahidediv="TRUE" maparameter="">
+                                                                 <td width="16">
+                                                                   <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" alt="" />
+                                                                 </td>
+                                                               </div>
+
+                                                               <td width="100%" style="width:100%;~(IF(ITEM.LINK_TEXT_ALIGN<>'','text-align:'&ITEM.LINK_TEXT_ALIGN&';',''))~">
+                                                                 <span style="color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;font-family:Arial,helvetica,sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;line-height:16px;font-weight:bold;" class="webfont">
+                                                                   ~(IF(ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT') , '&nbsp;' , ''))~
+                                                                   ~ITEM.LINK_TEXT~
+                                                                 </span>
+                                                               </td>
+
+                                                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND ITEM.BUTTON_ICON_POSITION='RIGHT'" mahidediv="TRUE" maparameter="">
+                                                                 <td width="16">
+                                                                   <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" alt="" />
+                                                                 </td>
+                                                               </div>
+
+                                                             </tr>
+                                                           </table>
+                                                         </center>
+                                                    </v:textbox>
+                                                 </v:roundrect>
+                                               <![endif]-->
+                                               <!--[if !mso]><!-->
+                                               <div style="~(IF(CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1,'padding-left:10px;padding-right:10px;',''))~mso-hide:all;">
+                                                 <a href="~PROBE(101)~" target="_blank" style="~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('background-color:#'&ITEM.BUTTON_BACKGROUND_COLOR&';'),''))~border-radius:0px;color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;display:inline-block;font-family:sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;font-weight:bold;line-height:25px;~(IF(ITEM.LINK_TEXT_ALIGN<>'','text-align:'&ITEM.LINK_TEXT_ALIGN&';',''))~text-decoration:none;width:100%;-webkit-text-size-adjust:none;mso-hide:all;~ITEM.BUTTON_WEBVERSION_CSS~">
+                                                     <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>''" mahidediv="TRUE" maparameter="">
+                                                       <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" ~if(ITEM.BUTTON_ICON_POSITION='RIGHT',dir="rtl",)~>
+                                                         <tr>
+                                                           <td align="center" valign="middle" style="padding-top:2px;padding-bottom:2px;" width="36">
+                                                             <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" alt="" />
+                                                           </td>
+                                                           <td align="~(If(ITEM.LINK_TEXT_ALIGN<>'',ITEM.LINK_TEXT_ALIGN,'left'))~" height="30" style="~if(ITEM.BUTTON_ICON_POSITION='RIGHT',padding-left:10px;,)~" ~if(ITEM.BUTTON_ICON_POSITION='LEFT',dir="ltr",)~ class="webfont">
+                                                             <span dir="ltr">~ITEM.LINK_TEXT~</span>
+                                                           </td>
+                                                         </tr>
+                                                       </table>
+                                                     </div>
+                                                     <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON=''" mahidediv="TRUE" maparameter="">
+                                                       <span style="padding-bottom:2px;" class="webfont">
+                                                         &nbsp;&nbsp;~ITEM.LINK_TEXT~&nbsp;&nbsp;
+                                                       </span>
+                                                     </div>
+                                                </a>
+                                              </div>
+                                              <!--<![endif]-->
+                                             </div>
+                                             </td>
+                                           </tr>
+
+                                           <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1 AND ITEM.BACKGROUND_COLOR<>''" mahidediv="TRUE" maparameter="">
+                                             <tr>
+                                               <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                             </tr>
+                                          </div>
+                                         </table>
+                                         <!-- End Fullwidth button -->
+                                     </div>
+
+                                     <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_POSITION = 'LEFT' OR ITEM.BUTTON_POSITION = 'CENTER' OR ITEM.BUTTON_POSITION = 'RIGHT'" mahidediv="TRUE" maparameter="">
+                                         <!-- Begin Normal Left,Centered,Right button -->
+                                         <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                         <tr>
+                                           <td style="~IF(CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1 OR ITEM.BUTTON_BACKGROUND_COLOR<>'',padding-left:10px;padding-right:10px;,)~" align="~ITEM.BUTTON_POSITION~" valign="top">
+                                             <div>
+                                               <!--[if mso]>
+                                               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="~PROBE(101)~" style="height:;v-text-anchor:middle;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,75,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,125,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',175,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',30,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',200,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~px;~ITEM.BUTTON_OUTLOOK_CSS~" arcsize="0%" stroke="f" ~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('fillcolor="#'&ITEM.BUTTON_BACKGROUND_COLOR&'"'),''))~>
+                                               	  <w:anchorlock/>
+                                               		<v:textbox inset="0,0,0,0" style="font-size: 0;line-height:0;mso-fit-shape-to-text:true;">
+                                               		   <center style="font-size: 0;line-height:0;">
+                                                 			 <table width="100%" border='0' cellpadding="0" cellspacing="0" style="width:100%;padding:5px;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'5'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'5'))~px;">
+
+                                                 			  <tr>
+                                                 				 <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT')" mahidediv="TRUE" maparameter="">
+                                                 				   <td width="16">
+                                                 					     <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" />
+                                                 				   </td>
+                                                 				 </div>
+
+                                                 				 <td width="100%" style="width:100%;~(IF(ITEM.LINK_TEXT_ALIGN<>'','text-align:'&ITEM.LINK_TEXT_ALIGN&';',''))~">
+                                                 				   <span style="color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;font-family:Arial,helvetica,sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;line-height:10px;font-weight:bold;" class="webfont">
+                                                   					 ~(IF(ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT') , '&nbsp;' , ''))~
+                                                   					 ~ITEM.LINK_TEXT~
+                                                 				   </span>
+                                                 				 </td>
+
+                                                 				 <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND ITEM.BUTTON_ICON_POSITION='RIGHT'" mahidediv="TRUE" maparameter="">
+                                                 				   <td width="16">
+                                                 					     <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" />
+                                                 				   </td>
+                                                 				 </div>
+
+                                                 			   </tr>
+                                                 			 </table>
+                                               		   </center>
+                                               	  </v:textbox>
+                                               	</v:roundrect>
+                                               <![endif]-->
+                                               <!--[if !mso]><!-->
+                                               <a href="~PROBE(101)~" target="_blank" style="~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('background-color:#'&ITEM.BUTTON_BACKGROUND_COLOR&';'),''))~color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;display:inline-block;font-family:sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;font-weight:bold;line-height:25px;text-align:center;text-decoration:none;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,75,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,125,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',175,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',30,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',200,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~px;-webkit-text-size-adjust:none;mso-hide:all;~ITEM.BUTTON_WEBVERSION_CSS~">
+                                                 <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>''" mahidediv="TRUE" maparameter="">
+                                                   <table align="left" border="0" cellpadding="0" cellspacing="0" style="~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('background-color:#'&ITEM.BUTTON_BACKGROUND_COLOR&';'),''))~mso-hide:all;" width="100%" ~if(ITEM.BUTTON_ICON_POSITION='RIGHT',dir="rtl",)~>
+                                                     <tr>
+                                                       <td align="center" valign="middle" style="padding-top:2px;padding-bottom:2px;" width="36">
+                                                         <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" />
+                                                       </td>
+                                                       <td align="~(If(ITEM.LINK_TEXT_ALIGN<>'',ITEM.LINK_TEXT_ALIGN,'left'))~" height="30" style="padding-bottom:2px;~if(ITEM.BUTTON_ICON_POSITION='RIGHT',padding-left:10px;,)~" ~if(ITEM.BUTTON_ICON_POSITION='LEFT',dir="ltr",)~ class="webfont">
+                                                         <span dir="ltr">~ITEM.LINK_TEXT~</span>
+                                                       </td>
+                                                     </tr>
+                                                   </table>
+                                                 </div>
+                                                 <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON=''" mahidediv="TRUE" maparameter="">
+                                                   <span style="height:26px;" class="webfont">
+                                                     &nbsp;&nbsp;~ITEM.LINK_TEXT~
+                                                   </span>
+                                                 </div>
+                                              </a>
+                                              <!--<![endif]-->
+                                           </div>
+                                           </td>
+                                         </tr>
+
+                                         <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_BACKGROUND_COLOR<>''" mahidediv="TRUE" maparameter="">
+                                           <tr>
+                                             <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                           </tr>
+                                        </div>
+
+                                       </table>
+                                         <!-- END Normal Left,Centered,Right button -->
+                                     </div>
+                                 <!-- End Normal Button -->
+                               </div>
+
+                               <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_TYPE = 'ROUNDED'" mahidediv="TRUE" maparameter="">
+                                 <!-- Begin Rounded Button -->
+
+                                         <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_POSITION = 'FULLWIDTH' OR ITEM.BUTTON_POSITION = ''" mahidediv="TRUE" maparameter="">
+                                           <!-- Begin Rounded Fullwidth button -->
+                                               <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                               <tr>
+                                                 <td align="center" valign="top">
+                                                   <div><!--[if mso]>
+                                                     <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1" mahidediv="TRUE" maparameter="">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="~PROBE(101)~" style="height:;v-text-anchor:middle;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,110,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,150,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',260,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',160,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',360,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',60,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',460,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,560,)~px;~ITEM.BUTTON_OUTLOOK_CSS~" arcsize="~(IF(ITEM.BUTTON_RADIUS_OUTLOOK<>'',ITEM.BUTTON_RADIUS_OUTLOOK,'50'))~%" stroke="f" ~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('fillcolor="#'&ITEM.BUTTON_BACKGROUND_COLOR&'"'),''))~>
+                                                     </div>
+                                                     <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')<>1" mahidediv="TRUE" maparameter="">
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="~PROBE(101)~" style="height:px;v-text-anchor:middle;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,122,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,175,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',276,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',180,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',380,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',80,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',480,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,579,)~px;~ITEM.BUTTON_OUTLOOK_CSS~" arcsize="~(IF(ITEM.BUTTON_RADIUS_OUTLOOK<>'',ITEM.BUTTON_RADIUS_OUTLOOK,'50'))~%" stroke="f" ~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('fillcolor="#'&ITEM.BUTTON_BACKGROUND_COLOR&'"'),''))~>
+                                                     </div>
+                                                        <w:anchorlock/>
+                                                          <v:textbox inset="0,0,0,0" style="font-size: 0;line-height:0;mso-fit-shape-to-text:true;">
+                                                             <center style="font-size: 0;line-height:0;">
+                                                               <table width="100%" border='0' cellpadding="0" cellspacing="0" style="width:100%;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;">
+
+                                                                <tr>
+                                                                   <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT')" mahidediv="TRUE" maparameter="">
+                                                                     <td width="16">
+                                                                       <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" alt="" />
+                                                                     </td>
+                                                                   </div>
+
+                                                                   <td width="100%" style="width:100%;~(IF(ITEM.LINK_TEXT_ALIGN<>'','text-align:'&ITEM.LINK_TEXT_ALIGN&';',''))~">
+                                                                     <span style="color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;font-family:Arial,helvetica,sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;line-height:16px;font-weight:bold;" class="webfont">
+                                                                       ~(IF(ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT') , '&nbsp;' , ''))~
+                                                                       ~ITEM.LINK_TEXT~
+                                                                     </span>
+                                                                   </td>
+
+                                                                   <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND ITEM.BUTTON_ICON_POSITION='RIGHT'" mahidediv="TRUE" maparameter="">
+                                                                     <td width="16">
+                                                                       <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" alt="" />
+                                                                     </td>
+                                                                   </div>
+
+                                                                 </tr>
+                                                               </table>
+                                                             </center>
+                                                        </v:textbox>
+                                                     </v:roundrect>
+                                                   <![endif]-->
+                                                   <!--[if !mso]><!-->
+                                                   <div style="~(IF(CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1,'padding-left:10px;padding-right:10px;',''))~mso-hide:all;">
+                                                     <a href="~PROBE(101)~" target="_blank" style="~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('background-color:#'&ITEM.BUTTON_BACKGROUND_COLOR&';'),''))~border-radius:~(IF(ITEM.BUTTON_RADIUS_WEBVERSION<>'',ITEM.BUTTON_RADIUS_WEBVERSION,'20'))~px;color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;display:inline-block;font-family:sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;font-weight:bold;line-height:25px;~(IF(ITEM.LINK_TEXT_ALIGN<>'','text-align:'&ITEM.LINK_TEXT_ALIGN&';',''))~text-decoration:none;width:100%;-webkit-text-size-adjust:none;mso-hide:all;~ITEM.BUTTON_WEBVERSION_CSS~">
+                                                         <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>''" mahidediv="TRUE" maparameter="">
+                                                           <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" ~if(ITEM.BUTTON_ICON_POSITION='RIGHT',dir="rtl",)~>
+                                                             <tr>
+                                                               <td align="center" valign="middle" style="padding-top:2px;padding-bottom:2px;" width="36">
+                                                                 <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" alt="" />
+                                                               </td>
+                                                               <td align="~(If(ITEM.LINK_TEXT_ALIGN<>'',ITEM.LINK_TEXT_ALIGN,'left'))~" height="30" style="padding-bottom:2px;~if(ITEM.BUTTON_ICON_POSITION='RIGHT',padding-left:10px;,)~" ~if(ITEM.BUTTON_ICON_POSITION='LEFT',dir="ltr",)~ class="webfont">
+                                                                 <span dir="ltr">~ITEM.LINK_TEXT~</span>
+                                                               </td>
+                                                             </tr>
+                                                           </table>
+                                                         </div>
+                                                         <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON=''" mahidediv="TRUE" maparameter="">
+                                                           <span style="height:26px;" class="webfont">
+                                                             &nbsp;&nbsp;~ITEM.LINK_TEXT~
+                                                           </span>
+                                                         </div>
+                                                    </a>
+                                                  </div>
+                                                  <!--<![endif]-->
+                                                 </div>
+                                                 </td>
+                                               </tr>
+
+                                               <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1 AND ITEM.BACKGROUND_COLOR<>''" mahidediv="TRUE" maparameter="">
+                                                 <tr>
+                                                   <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                                 </tr>
+                                              </div>
+                                             </table>
+                                             <!-- End Rounded Fullwidth button -->
+                                         </div>
+
+                                         <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_POSITION = 'LEFT' OR ITEM.BUTTON_POSITION = 'CENTER' OR ITEM.BUTTON_POSITION = 'RIGHT'" mahidediv="TRUE" maparameter="">
+                                             <!-- Begin Rounded Left,Centered,Right button -->
+                                             <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                             <tr>
+                                               <td style="~IF(CHKPROP(ITEM.BUTTON_OPTIONS,'BUTTONS_PADDING')=1 OR ITEM.BUTTON_BACKGROUND_COLOR<>'',padding-left:10px;padding-right:10px;,)~" align="~ITEM.BUTTON_POSITION~" valign="top">
+                                                 <div>
+                                                   <!--[if mso]>
+                                                   <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="~PROBE(101)~" style="height:;v-text-anchor:middle;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,75,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,125,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',175,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',30,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',200,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~px;~ITEM.BUTTON_OUTLOOK_CSS~" arcsize="~(IF(ITEM.BUTTON_RADIUS_OUTLOOK<>'',ITEM.BUTTON_RADIUS_OUTLOOK,'50'))~%" stroke="f" ~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('fillcolor="#'&ITEM.BUTTON_BACKGROUND_COLOR&'"'),''))~>
+                                                   	  <w:anchorlock/>
+                                                   		<v:textbox inset="0,0,0,0" style="font-size: 0;line-height:0;mso-fit-shape-to-text:true;">
+                                                   		   <center style="font-size: 0;line-height:0px;">
+                                                     			 <table width="100%" border='0' cellpadding="0" cellspacing="0" style="width:100%;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;">
+                                                     			  <tr>
+                                                     				 <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT')" mahidediv="TRUE" maparameter="">
+                                                     				   <td width="16">
+                                                     					     <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" />
+                                                     				   </td>
+                                                     				 </div>
+
+                                                     				 <td width="100%" style="width:100%;~(IF(ITEM.LINK_TEXT_ALIGN<>'','text-align:'&ITEM.LINK_TEXT_ALIGN&';',''))~">
+                                                     				   <span style="color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;font-family:Arial,helvetica,sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;line-height:10px;font-weight:bold;~ITEM.BUTTON_OUTLOOK_CSS~" class="webfont">
+                                                       					 ~(IF(ITEM.BUTTON_ICON<>'' AND (ITEM.BUTTON_ICON_POSITION='' OR ITEM.BUTTON_ICON_POSITION='LEFT') , '&nbsp;' , ''))~
+                                                       					 ~ITEM.LINK_TEXT~
+                                                     				   </span>
+                                                     				 </td>
+
+                                                     				 <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>'' AND ITEM.BUTTON_ICON_POSITION='RIGHT'" mahidediv="TRUE" maparameter="">
+                                                     				   <td width="16">
+                                                     					     <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" />
+                                                     				   </td>
+                                                     				 </div>
+
+                                                     			   </tr>
+                                                     			 </table>
+                                                   		   </center>
+                                                   	  </v:textbox>
+                                                   	</v:roundrect>
+                                                   <![endif]-->
+                                                   <!--[if !mso]><!-->
+                                                   <a href="~PROBE(101)~" target="_blank" style="~(IF(ITEM.BUTTON_BACKGROUND_COLOR<>'',('background-color:#'&ITEM.BUTTON_BACKGROUND_COLOR&';'),''))~border-radius:~(IF(ITEM.BUTTON_RADIUS_WEBVERSION<>'',ITEM.BUTTON_RADIUS_WEBVERSION,'20'))~px;color:#~(IF(ITEM.LINK_COLOR<>'',(ITEM.LINK_COLOR),('000001')))~;display:inline-block;font-family:sans-serif;font-size:~(IF(ITEM.LINK_TEXT_FONTSIZE<>'',ITEM.LINK_TEXT_FONTSIZE,'13'))~px;padding-top:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;padding-bottom:~(IF(ITEM.BUTTON_PADDING<>'',ITEM.BUTTON_PADDING,'0'))~px;font-weight:bold;line-height:25px;text-align:center;text-decoration:none;width:~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,75,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,125,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH',175,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONETHIRD',100,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_TWOTHIRD',200,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_ONESIXTH',30,)~~IF(ITEM.BLOCKTYPE='HALFWIDTH_FIVESIXTH',200,)~~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,200,)~px;-webkit-text-size-adjust:none;mso-hide:all;~ITEM.BUTTON_WEBVERSION_CSS~">
+                                                     <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON<>''" mahidediv="TRUE" maparameter="">
+                                                       <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" ~if(ITEM.BUTTON_ICON_POSITION='RIGHT',dir="rtl",)~>
+                                                         <tr>
+                                                           <td align="center" valign="middle" style="padding-top:2px;padding-bottom:2px;" width="36">
+                                                             <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128" style="display:block;max-width:16px;height:auto;" width="16" alt="" />
+                                                           </td>
+                                                           <td align="~(If(ITEM.LINK_TEXT_ALIGN<>'',ITEM.LINK_TEXT_ALIGN,'left'))~" height="30" style="padding-bottom:2px;~if(ITEM.BUTTON_ICON_POSITION='RIGHT',padding-left:10px;,)~" ~if(ITEM.BUTTON_ICON_POSITION='LEFT',dir="ltr",)~ class="webfont">
+                                                             <span dir="ltr">~ITEM.LINK_TEXT~</span>
+                                                           </td>
+                                                         </tr>
+                                                       </table>
+                                                     </div>
+                                                     <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_ICON=''" mahidediv="TRUE" maparameter="">
+                                                       <span style="height:26px;" class="webfont">
+                                                         &nbsp;&nbsp;~ITEM.LINK_TEXT~
+                                                       </span>
+                                                     </div>
+                                                  </a>
+                                                  <!--<![endif]-->
+                                               </div>
+                                               </td>
+                                             </tr>
+
+                                             <div contenteditable="true" id="MASECTION" maconstraint="ITEM.BUTTON_BACKGROUND_COLOR<>''" mahidediv="TRUE" maparameter="">
+                                               <tr>
+                                                 <td height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                                               </tr>
+                                            </div>
+
+                                           </table>
+                                             <!-- END Rounded Left,Centered,Right button -->
+                                         </div>
+                                 <!-- End Rounded Button -->
+                               </div>
+                             <!-- End Button -->
+                           </div>
+
+                         </td>
+                       </tr>
+                     </table>
+
+                     <div contenteditable="true" id="MASECTION" maconstraint="(ITEM.BORDER_COLOR<>'' AND ITEM.BORDER_COLOR<>'ffffff') OR (ITEM.BACKGROUND_COLOR<>'' AND ITEM.BACKGROUND_COLOR<>'ffffff') OR (ITEM.BUTTON_BACKGROUND_COLOR<>'' AND ITEM.BUTTON_BACKGROUND_COLOR<>'ffffff') OR ITEM.LINK_TEXT<>''" mahidediv="TRUE" maparameter="">
+                       <!-- Begin extra whitespace colored block -->
+                        <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'NO_PADDING_BOTTOM')<>1" mahidediv="TRUE" maparameter="">
+                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                           <tr>
+                             <td height="10" style="font-size:16px;line-height:10px;padding:0px;">&nbsp;</td>
+                           </tr>
+                         </table>
+                       </div>
+                       <!-- End extra whitespace colored block -->
+                     </div>
+
+                   </td>
+                 </tr>
+               </table>
+
+             <!-- End column -->
+             </div>
+
+
+              <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ITEM.BLOCKTYPE,9)='FULLWIDTH'" mahidediv="TRUE" maparameter="">
+              <!-- Begin Full width end hacks -->
+
+                <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+                ~('<')~/td~('>')~~('<')~/tr~('>')~
+                </div>
+              <!-- End Full width end hacks -->
+              </div>
+
+              <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ITEM.BLOCKTYPE,9)='HALFWIDTH'" mahidediv="TRUE" maparameter="">
+              <!-- Begin Half width end hacks -->
+
+                <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),9)='HALFWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-10, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-13, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),9)='HALFWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),9)<>'HALFWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-18, 'BLOCKTYPE'),9)<>'HALFWIDTH')))))))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),9)='HALFWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),9)<>'HALFWIDTH'))" mahidediv="TRUE" maparameter="">
+                <!-- Begin second half width outlook hacks -->
+
+                  <!--[if (gte mso 9)|(IE)]>
+                     </td>
+                   </tr>
+                  </table>
+                  <![endif]-->
+                  <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+                  ~('<')~/td~('>')~~('<')~/tr~('>')~
+                  </div>
+
+                <!-- End second half width outlook hacks -->
+                </div>
+
+             <!-- End Half width end hacks -->
+             </div>
+
+
+             <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ITEM.BLOCKTYPE,10)='THIRDWIDTH'" mahidediv="TRUE" maparameter="">
+             <!-- Begin Third width end hacks -->
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-5, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-6, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-9, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-14, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-17, 'BLOCKTYPE'),10)='THIRDWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-18, 'BLOCKTYPE'),10)<>'THIRDWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-20, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-21, 'BLOCKTYPE'),10)<>'THIRDWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),10)='THIRDWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),10)<>'THIRDWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin last third width outlook hack -->
+
+                 <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                 </table>
+                 <![endif]-->
+                 <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+                   ~('<')~/td~('>')~~('<')~/tr~('>')~
+                 </div>
+
+               <!-- End last third width outlook hack -->
+               </div>
+
+             <!-- End Third width end hacks -->
+             </div>
+
+             <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ITEM.BLOCKTYPE,12)='QUARTERWIDTH'" mahidediv="TRUE" maparameter="">
+             <!-- Begin quarter width end hacks -->
+
+               <div contenteditable="true" id="MASECTION" maconstraint="LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-3, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-2, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND ((LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-7, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-8, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-11, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-12, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-15, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-16, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-19, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-20, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-23, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-24, 'BLOCKTYPE'),12)<>'QUARTERWIDTH' OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-27, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-28, 'BLOCKTYPE'),12)<>'QUARTERWIDTH')))))))))))) OR (LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX-4, 'BLOCKTYPE'),12)='QUARTERWIDTH' AND LEFT(ARTICLE_PROPERTY('ARTICLES\MAIN',ITEM._INDEX+1, 'BLOCKTYPE'),12)<>'QUARTERWIDTH'))" mahidediv="TRUE" maparameter="">
+               <!-- Begin last quarter width outlook hack -->
+
+                 <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                 </table>
+                 <![endif]-->
+                 <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+                   ~('<')~/td~('>')~~('<')~/tr~('>')~
+                 </div>
+
+               <!-- End last quarter width outlook hack -->
+               </div>
+
+             <!-- End quarter width end hacks -->
+             </div>
+
+             <div contenteditable="true" id="MASECTION" maconstraint="CHKPROP(ITEM.OPTIONS,'HIDE_DIVIDER')<>1" mahidediv="TRUE" maparameter="">
+             <!-- Begin divider -->
+
+               <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+               ~('<')~tr~('>')~~('<')~td~('>')~
+               </div>
+               <div contenteditable="true" id="MASECTION" maconstraint="DYNCONTENT.CUSTOM_DIVIDER=''" mahidediv="TRUE" maparameter="">
+                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                   <tr>
+                     <td style="padding-left:10px;padding-right:10px;" valign="top">
+                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                           <tr>
+                             <td height="1" style="font-size:1px;line-height:1px;border-top: 1px solid #~(IF(ITEM.DIVIDER_COLOR,ITEM.DIVIDER_COLOR,'000001'))~;padding:0px;">&nbsp;</td>
+                           </tr>
+                           <tr>
+                             <td height="16" style="font-size:16px;line-height:16px;padding:0px;">&nbsp;</td>
+                           </tr>
+                         </table>
+                       </td>
+                     </tr>
+                   </table>
+                </div>
+                <div contenteditable="true" id="MASECTION" maconstraint="DYNCONTENT.CUSTOM_DIVIDER<>''" mahidediv="TRUE" maparameter="">
+                  ~DYNCONTENT.CUSTOM_DIVIDER~
+                 </div>
+               <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+               ~('<')~/td~('>')~~('<')~/tr~('>')~
+               </div>
+
+             <!-- End divider -->
+             </div>
+
+
+           <!-- End article -->
+           </div>
+         </div>
+       <div contenteditable="true" id="MASECTION" maconstraint="$ID<>0" mahidediv="TRUE" maparameter="">
+       ~('<')~/table~('>')~
+       </div>
+       <!-- End content -->
+
+    <!--[if (gte mso 9)|(IE)]>
+       </td>
+     </tr>
+   </table>
+   <![endif]-->
+   </div>
+   </td></tr></table>
+   <!-- End content wrapper -->
+
+
+   <!--[if (gte mso 9)|(IE)]>
+   <table width="100%" align="center">
+     <tr>
+       <td  style="padding:0px;">
+   <![endif]-->
+       <!-- Begin Footer -->
+   <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center" class="" style="~(IF( DYNCONTENT.FOOTER_WRAPPER_BACKGROUND_COLOR ='','','background-color:#'&DYNCONTENT.FOOTER_WRAPPER_BACKGROUND_COLOR&';'))~">
+     <tr>
+       <td width="100%" bgcolor="~(IF(DYNCONTENT.FOOTER_WRAPPER_BACKGROUND_COLOR ='','',DYNCONTENT.FOOTER_WRAPPER_BACKGROUND_COLOR))~" valign="top" align="center">
+
+
+
+         <!--[if (gte mso 9)|(IE)]>
+         <table width="605" align="center">
+           <tr>
+             <td  style="padding:0px;">
+         <![endif]-->
+            <!-- Begin Footer content -->
+
+  		<table border="0" cellpadding="0" cellspacing="0" style="Margin: 0 auto; width: 100%; max-width: 600px;~(IF( DYNCONTENT.FOOTER_BACKGROUND_COLOR ='','','background-color:#'&DYNCONTENT.FOOTER_BACKGROUND_COLOR&';'))~">
+        <tr>
+          <td>
+
+            <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.CUSTOM_FOOTER <> ''" mahidediv="TRUE" maparameter="">
+              <!-- Begin Custom Footer -->
+                ~DYNCONTENT.CUSTOM_FOOTER~
+              <!-- End Custom Footer -->
+            </div>
+
+          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.CLOSE_ALERT_TEXT <> ''" mahidediv="TRUE" maparameter="">
+            <!-- Begin Close alert -->
+
+            <div contenteditable="false" id="MASECTION" maconstraint="ID=0" mahidediv="TRUE" maparameter="">
+              <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.CLOSE_ALERT_URL = ''" mahidediv="TRUE" maparameter="">
+                <p style="background-color:#ff0000;padding:10px;color:#FFFFFF;">
+                  <strong>Warning!</strong><br>
+                  The close alert url is not set yet!
+                </p>
+              </div>
+            </div>
+
+            <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.CLOSE_ALERT_URL <> ''" mahidediv="TRUE" maparameter="">
+              <br>
+              <table class="outer" style="Margin: 0 auto; width: 100%; max-width: 600px;~DYNCONTENT.CLOSE_ALERT_CSS~" cellspacing="0" cellpadding="0" border="0" align="center">
+                   <!-- Begin Article --><!-- Begin Half width start hacks --><!-- Begin start first half width outlook hack -->
+                    <tbody><tr><td class="thirdWidth" style="padding:0px;text-align: center;font-size: 0;">
+                             <!--[if (gte mso 9)|(IE)]><TABLE  WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" ><tr><td valign="top" width="400" style="padding:0px;"><![endif]--><!-- End start first half width outlook hack --><!-- End Half width start hacks --><div class="column twothirdWidth mobileFullwidth" style="width:100%;max-width:400px;display:inline-block;vertical-align: top;"><!-- Begin column --><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td style="padding-left:10px;padding-right:10px;"><table style="" valign="top" width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- Begin TITLE_IMAGE --><!-- END TITLE_IMAGE --><!-- Begin content -->
+                             <table width="100%" cellspacing="0" cellpadding="0" border="0" style="padding-top:3px;"><tbody><tr><td style="padding-left:10px;padding-right:10px;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;-webkit-text-size-adjust:none;" valign="middle" align="center"><span class="webfont" style="color:#~(IF(DYNCONTENT.CLOSE_ALERT_TEXT_COLOR ='','000001',DYNCONTENT.CLOSE_ALERT_TEXT_COLOR))~ !important;font-size:18px;font-weight:bold;~DYNCONTENT.CLOSE_ALERT_TEXT_CSS~"><font color="#~(IF(DYNCONTENT.CLOSE_ALERT_TEXT_COLOR ='','000001',DYNCONTENT.CLOSE_ALERT_TEXT_COLOR))~">~DYNCONTENT.CLOSE_ALERT_TEXT~</font></span></td></tr></tbody></table><!-- End content --></td></tr></tbody></table></td></tr></tbody></table><!-- End column --></div><!-- Begin Half width end hacks --><!-- End Half width end hacks --><!-- End article --><!-- Begin Article --><!-- Begin Half width start hacks --><!-- Begin second half width outlook hack --><!--[if (gte mso 9)|(IE)]></td><td valign="top" width="200" style="padding:0px;"><![endif]--><!-- End second half width outlook hack --><!-- End Half width start hacks --><div class="column mobileFullwidth" style="width:100%;max-width:200px;display:inline-block;vertical-align: top;"><!-- Begin column --><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td style="padding-left:10px;padding-right:10px;"><table style="" valign="top" width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- Begin TITLE_IMAGE --><!-- END TITLE_IMAGE --><!-- Begin content -->
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td style="padding-left:10px;padding-right:10px;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;-webkit-text-size-adjust:none;" valign="top" align="center">
+                             <a href="~PROBE(400)~" target="_blank"><img src="https://placeholdit.imgix.net/~text?w=37&h=37" alt="Like" height="36" width="37" border="0"/></a>
+                             &nbsp;
+                             <a href="~PROBE(401)~" target="_blank"><img src="https://placeholdit.imgix.net/~text?w=37&h=37" alt="Dislike" height="36" width="37" border="0"/></a>
+                           </td></tr></tbody></table><!-- End content --></td></tr></tbody></table></td></tr></tbody></table><!-- End column --></div><!-- Begin Half width end hacks --><!-- Begin second half width outlook hacks --><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                              </td></tr>
+                              <!-- End second half width outlook hacks --><!-- End Half width end hacks --><!-- End article -->
+                   </tbody>
+              </table>
+            </div>
+
+            <!-- End Close alert -->
+          </div>
+
+  	   <!-- Begin normal footer -->
+         <table cellpadding="0" cellspacing="0" border="0" align="center" class="outer" style="Margin: 0 auto; width: 100%; max-width: 600px;">
+           <tr>
+             <td class="fullWidth" style="padding-bottom:16px;padding-left:10px;padding-right:10px;">
+               <table align="center" border="0" cellpadding="0" cellspacing="0" style="clear:both;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;max-width:600px;" width="100%">
+                 <tr>
+                   <td align="center" style="padding:10px;font-size:16px;line-height:1.4;">
+
+
+               					 <!-- Begin Social -->
+               					 <table align="center" border="0" cellpadding="0" cellspacing="0" width="150">
+               					   <tr>
+
+               						<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_1 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(301)~" target="_blank">~DYNCONTENT.SOCIAL_1~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_2 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(302)~" target="_blank">~DYNCONTENT.SOCIAL_2~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_3 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(303)~" target="_blank">~DYNCONTENT.SOCIAL_3~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_4 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(304)~" target="_blank">~DYNCONTENT.SOCIAL_4~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_5 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(305)~" target="_blank">~DYNCONTENT.SOCIAL_5~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_6 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(306)~" target="_blank">~DYNCONTENT.SOCIAL_6~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_7 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(307)~" target="_blank">~DYNCONTENT.SOCIAL_7~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_8 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(308)~" target="_blank">~DYNCONTENT.SOCIAL_8~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_9 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(309)~" target="_blank">~DYNCONTENT.SOCIAL_9~</a></td>
+               						</div>
+
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.SOCIAL_10 <> ''" mahidediv="TRUE" maparameter="">
+               							<td style="padding:10px;"><A style="COLOR: #000001;font-weight:bold;text-decoration:none;" href="~PROBE(310)~" target="_blank">~DYNCONTENT.SOCIAL_10~</a></td>
+               						</div>
+
+               					   </tr>
+               					 </table><br>
+               					 <!-- END Social -->
+
+
+
+          <div id="MASECTION" macontenteditable="FALSE" maconstraint="DYNCONTENT.FOOTER_TEXT <> ''" matype="" mahidediv="true" maparameter=""><span class="webfont" style="COLOR: #000001;font-weight:bold;text-decoration:none;~DYNCONTENT.FOOTER_TEXT_CSS~">~DYNCONTENT.FOOTER_TEXT~</span></div><div id="MASECTION" macontenteditable="FALSE" maconstraint="DYNCONTENT.UNSUBSCRIBE_TEXT <> ''" matype="" mahidediv="true" maparameter=""><A class="webfont" style="COLOR: #000001;font-weight:bold;text-decoration:none;~DYNCONTENT.UNSUBSCRIBE_TEXT_CSS~" href="~PROBE(103)~" target="_blank">~DYNCONTENT.UNSUBSCRIBE_TEXT~</A></div><div id="MASECTION" macontenteditable="FALSE" maconstraint="DYNCONTENT.FOOTER_TEXT_TRAILER <> ''" matype="" mahidediv="true" maparameter=""><span class="webfont" style="COLOR: #000001;font-weight:bold;text-decoration:none;~DYNCONTENT.FOOTER_TEXT_CSS~">~DYNCONTENT.FOOTER_TEXT_TRAILER~</span></div>
+                      <!-- Begin footer menu -->
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_1 <> ''" mahidediv="TRUE" maparameter="">
+                            <span style="COLOR: #000001;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~">|</span>&nbsp;<A class='webfont' style="COLOR: #000001;font-weight:bold;text-decoration:none;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~" href="~PROBE(102)~" target="_blank">~DYNCONTENT.FOOTER_URL_TEXT_1~</A>&nbsp;
+                          </div>
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_2 <> ''" mahidediv="TRUE" maparameter="">
+                            <span style="COLOR: #000001;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~">|</span>&nbsp;<A class='webfont' style="COLOR: #000001;font-weight:bold;text-decoration:none;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~" href="~PROBE(106)~" target="_blank">~DYNCONTENT.FOOTER_URL_TEXT_2~</A>&nbsp;
+                          </div>
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_3 <> ''" mahidediv="TRUE" maparameter="">
+                            <span style="COLOR: #000001;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~">|</span>&nbsp;<A class='webfont' style="COLOR: #000001;font-weight:bold;text-decoration:none;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~" href="~PROBE(104)~" target="_blank">~DYNCONTENT.FOOTER_URL_TEXT_3~</A>&nbsp;
+                          </div>
+                          <div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.FOOTER_URL_TEXT_4 <> ''" mahidediv="TRUE" maparameter="">
+                            <span style="COLOR: #000001;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~">|</span>&nbsp;<A class='webfont' style="COLOR: #000001;font-weight:bold;text-decoration:none;~(IF(DYNCONTENT.FOOTER_MENU_CSS<>'',(DYNCONTENT.FOOTER_MENU_CSS),''))~" href="~PROBE(105)~" target="_blank">~DYNCONTENT.FOOTER_URL_TEXT_4~</A>&nbsp;
+                          </div>
+                      <!-- End footer menu -->
+
+
+             				 <br><br>
+
+                      <span style="color:#000001;font-size:11px;~DYNCONTENT.FOOTER_COPYRIGHT_CSS~" class="webfont">
+                        &copy; ~SYSTEM.YEAR~ ~DYNCONTENT.COMPANY_TEXT~<br />
+                      </span>
+          						<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.BRAND_TITLE_URL<>''" mahidediv="TRUE" maparameter="">
+          							<a href="~PROBE(107)~" target="_blank" style="color:#000001;font-size:11px;~DYNCONTENT.BRAND_TITLE_CSS~" class="webfont">~DYNCONTENT.BRAND_TITLE~</a>
+          						</div>
+          						<div contenteditable="false" id="MASECTION" maconstraint="DYNCONTENT.BRAND_TITLE_URL=''" mahidediv="TRUE" maparameter="">
+          							<span style="color:#000001;font-size:11px;~DYNCONTENT.BRAND_TITLE_CSS~" class="webfont">~DYNCONTENT.BRAND_TITLE~</span>
+          						</div>
+                      <span style="color:#000001;font-size:11px;~DYNCONTENT.FOOTER_COPYRIGHT_CSS~" class="webfont">
+                       ~DYNCONTENT.PART_OF_TEXT~
+                      </span>
+
+                   </td>
+                 </tr>
+                 <tr>
+                   <td colspan="3" height="10" style="font-size:10px;line-height:10px;padding:0px;">&nbsp;</td>
+                 </tr>
+               </table>
+             </td>
+            </tr>
+          </table>
+  		<!-- End normal footer -->
+
+      		  </td>
+          </tr>
+        </table>
+
+        <!-- End Footer content -->
+  <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+    </table>
+  <![endif]-->
+
+       </td>
+     </tr>
+   </table>
+    <!-- End Footer -->
+   <!--[if (gte mso 9)|(IE)]>
+         </td>
+       </tr>
+     </table>
+   <![endif]-->
+
+
+   </center>
+
+
+   <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="" mahidediv="TRUE">
+
+
+     <table border='1' width='100%' cellspacing="10"  cellpadding="10">
+       <thead>
+         <tr style="background-color:#f4f4f4;">
+           <td>Name</td>
+           <td>Value</td>
+         </tr>
+       </thead>
+
+       <tbody>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Wrapper CSS</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.WRAPPER_CSS~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="WRAPPER_CSS" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Logo</h2></td>
+           <td valign="top">
+             <div id="masection" contenteditable="true" maconstraint="DYNCONTENT.LOGO <> ''" maparameter="" mahidediv="TRUE">
+               <img src="~DYNCONTENT.LOGO~" border="0" alt="" style="max-width:580px;"><br>
+             </div>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="LOGO" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Logo URL</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.LOGO_URL~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="LOGO_URL" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Header text</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.HEADER~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="HEADER" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Header wrapper background color</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.HEADER_WRAPPER_BACKGROUND_COLOR~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="HEADER_WRAPPER_BACKGROUND_COLOR" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Header background color</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.HEADER_BACKGROUND_COLOR~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="HEADER_BACKGROUND_COLOR" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Content wrapper background color</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.CONTENT_WRAPPER_BACKGROUND_COLOR~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="CONTENT_WRAPPER_BACKGROUND_COLOR" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Content background color</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.CONTENT_BACKGROUND_COLOR~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="CONTENT_BACKGROUND_COLOR" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Footer wrapper background color</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.FOOTER_WRAPPER_BACKGROUND_COLOR~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="FOOTER_WRAPPER_BACKGROUND_COLOR" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Footer background color</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.FOOTER_BACKGROUND_COLOR~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="FOOTER_BACKGROUND_COLOR" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Close alert url</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.CLOSE_ALERT_URL~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="CLOSE_ALERT_URL" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Close alert text</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.CLOSE_ALERT_TEXT~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="CLOSE_ALERT_TEXT" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Close alert text color</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.CLOSE_ALERT_TEXT_COLOR~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="CLOSE_ALERT_TEXT_COLOR" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Close alert text css</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.CLOSE_ALERT_TEXT_CSS~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="CLOSE_ALERT_TEXT_CSS" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Close alert css</h2></td>
+           <td valign="top">
+             <h3>~DYNCONTENT.CLOSE_ALERT_CSS~</h3>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="CLOSE_ALERT_CSS" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+         <tr style="~(IF(DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR='','','background-color:#'&DYNCONTENT.USER_CUSTOM_DATA_BACKGROUND_COLOR&';'))~">
+           <td><h2>Background image</h2></td>
+           <td valign="top">
+             <div id="masection" contenteditable="true" maconstraint="DYNCONTENT.BACKGROUND_IMAGE <> ''" maparameter="" mahidediv="TRUE">
+               <a href="~DYNCONTENT.BACKGROUND_IMAGE~" target="_blank"><img src="~DYNCONTENT.BACKGROUND_IMAGE~" border="0" alt="" style="max-width:580px;"></a><br>
+             </div>
+             <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="BACKGROUND_IMAGE" mahidediv="TRUE"></div>
+           </td>
+         </tr>
+
+       </tbody>
+     </table>
+   </div>
+
+
+</body>
+</html>

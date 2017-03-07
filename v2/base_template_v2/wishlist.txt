@@ -1,0 +1,3 @@
+- better way to add the footer links
+
+- A way to switch between 2 different header layout
