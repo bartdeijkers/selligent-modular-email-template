@@ -367,7 +367,6 @@ Upload and change base path in template to use.
 | 605 | Whatsapp Share | Url | whatsapp://send?text=~ITEM.LINK_URL~ | 2.7.2 |
 | 606 | Google+ Share | Url | https://plus.google.com | 2.7.2 |
 | 607 | Mail Share | Url | mailto:?subject=~ITEM.TITLE~&body=~ITEM.TITLE~ ~ITEM.LINK_URL~ | 2.7.2 |
-| 1000 | Optin renewal | Flow |  | 2.7.7 |
 
 
 ### Designer Content Parameters
