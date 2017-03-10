@@ -1,6 +1,7 @@
 v2.7.8.1
 - Removed container OPTIN_2
 - Removed container SHORTWELCOME_1
+- Removed Close Alert
 
 v2.7.8
 + [added] container ADVERTORIAL_CSS

@@ -359,8 +359,6 @@ Upload and change base path in template to use.
 | 308 | Social 8 | Url | http://www.my.site/ | 2.5 |
 | 309 | Social 9 | Url | http://www.my.site/ | 2.5 |
 | 310 | Social 10 | Url | http://www.my.site/ | 2.5 |
-| 400 | Close Alert Like | Url | ~DYNCONTENT.CLOSE_ALERT_URL~positive?campaign=~SYSTEM.CAMPAIGNNAME~&amp;email=~mail~&amp;mail_url=~probe(0)~ | 2.6.4.1 |
-| 401 | Close Alert Dislike | Url | ~DYNCONTENT.CLOSE_ALERT_URL~negative?campaign=~SYSTEM.CAMPAIGNNAME~&amp;email=~mail~&amp;mail_url=~probe(0)~ | 2.6.4.1 |
 | 600 | FB Share | Url | http://www.facebook.com/sharer.php?u=~(URLENCODE(ITEM.LINK_URL))~ | 2.7.2 |
 | 601 | Twitter Share | Url | http://twitter.com/intent/tweet?text=~(URLENCODE(ITEM.TITLE))~%20~(URLENCODE(ITEM.LINK_URL))~ | 2.7.2 |
 | 602 | Instagram Share | Url | http://www.instagram.com | 2.7.2 |
@@ -423,12 +421,6 @@ Upload and change base path in template to use.
 | SOCIAL_9 | TEXT |  | Social icon 9 | 2.5 |
 | SOCIAL_10 | TEXT |  | Social icon 10 | 2.5 |
 | BACKGROUND_IMAGE | TEXT |  |  | 2.6.3 |
-| CLOSE_ALERT_TEXT | TEXT | Wat vind jij van deze email? |  | 2.6.4.1 |
-| CLOSE_ALERT_URL | TEXT |  |  | 2.6.4.1 |
-| LOGO_ALIGN | TEXT |  | center | 2.6.4.2 |
-| CLOSE_ALERT_TEXT_COLOR | TEXT |  |  | 2.7.1 |
-| CLOSE_ALERT_TEXT_CSS | TEXT |  |  | 2.7.1 |
-| CLOSE_ALERT_CSS | TEXT |  |  | 2.7.1 |
 | WRAPPER_CSS | TEXT |  |  | 2.7.1 |
 | WRAPPER_BACKGROUND_COLOR | TEXT |  |  | 2.7.1 |
 | SHARE_FB_ICON | TEXT |  |  | 2.7.2 |
@@ -487,22 +479,6 @@ The radius to render in Outlook. The values are in %
 
 - BUTTON_RADIUS_WEBVERSION
 Other email clients radius. the values are in px
-
-
-### Close Alert
-As of v2.7 there is an option to activiate the close alert. In order to reveal the close alert in the template you must have the following set :
-
-- CLOSE_ALERT_URL
-The url is the BASE landing url on close alert. So a typical close alert would be (for example) :
-
-http://feedback.closealert.com/campaigns/my-campaign/positive?campaign=
-or
-http://feedback.closealert.com/campaigns/my-campaign/negative?campaign=
-
-The container CLOSE_ALERT_URL needs to have a base url : http://feedback.closealert.com/campaigns/my-campaign/
-
-- CLOSE_ALERT_TEXT
-This is the question you would like to ask.
 
 
 ### Recommended image dimensions
