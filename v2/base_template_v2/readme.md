@@ -507,7 +507,9 @@ The container CLOSE_ALERT_URL needs to have a base url : http://feedback.closeal
 This is the question you would like to ask.
 
 
-## Recommended image dimensions
+### Recommended image dimensions
+
+| --- | --- |
 | Blocktype | Max width |
 | FULLWIDTH | 580px |
 | HALFWIDTH | 280px |
