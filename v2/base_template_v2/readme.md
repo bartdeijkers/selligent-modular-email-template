@@ -440,8 +440,6 @@ Upload and change base path in template to use.
 | SHARE_GOOGLEPLUS_ICON | TEXT |  |  | 2.7.2 |
 | SHARE_MAIL_ICON | TEXT |  |  | 2.7.2 |
 | STYLES | TEXT |  | Styles for in the HTML/HEAD section  | 2.7.5 |
-| SHORTWELCOME_1 | TEXT |  | SHORTWELCOME=1 text  | 2.7.7 |
-| OPTIN_2 | TEXT |  | OPTIN=2 text  | 2.7.7 |
 | USER_CUSTOM_DATA_BACKGROUND_COLOR | TEXT |  |  | 2.7.8 |
 
 

@@ -1,3 +1,7 @@
+v2.7.8.1
+- Removed container OPTIN_2
+- Removed container SHORTWELCOME_1
+
 v2.7.8
 + [added] container ADVERTORIAL_CSS
 + [added] Article option ADD_PADDING_BOTTOM_IMAGE
