@@ -509,8 +509,8 @@ This is the question you would like to ask.
 
 ### Recommended image dimensions
 
-| --- | --- |
 | Blocktype | Max width |
+| --- | --- |
 | FULLWIDTH | 580px |
 | HALFWIDTH | 280px |
 | THIRDWIDTH | 180px |
