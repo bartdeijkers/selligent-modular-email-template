@@ -365,7 +365,7 @@ Upload and change base path in template to use.
 | 603 | YouTube Share | Url | http://www.youtube.com | 2.7.2 |
 | 604 | Pinterest Share | Url | http://www.pinterest.com | 2.7.2 |
 | 605 | Whatsapp Share | Url | whatsapp://send?text=~ITEM.LINK_URL~ | 2.7.2 |
-| 606 | Google+ Share | Url | https://plus.google.com | 2.7.2 |
+| 606 | Google+ Share | Url | https://plus.google.com/share?url=~(URLENCODE(ITEM.LINK_URL))~ | 2.7.2 |
 | 607 | Mail Share | Url | mailto:?subject=~ITEM.TITLE~&body=~ITEM.TITLE~ ~ITEM.LINK_URL~ | 2.7.2 |
 
 
@@ -432,6 +432,8 @@ Upload and change base path in template to use.
 | SHARE_MAIL_ICON | TEXT |  |  | 2.7.2 |
 | STYLES | TEXT |  | Styles for in the HTML/HEAD section  | 2.7.5 |
 | USER_CUSTOM_DATA_BACKGROUND_COLOR | TEXT |  |  | 2.7.8 |
+| SHARE_TEXT | TEXT | | | 2.7.8.2 |
+| SHARE_TEXT_CSS | TEXT | | | 2.7.8.2 |
 
 
 ### SIM Articles XML

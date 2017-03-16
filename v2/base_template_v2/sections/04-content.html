@@ -1,6 +1,6 @@
 <div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="" mahidediv="TRUE">
   <!--
-    v2.7.8.1
+    v2.7.8.2
   -->
 </div>
 
@@ -482,57 +482,56 @@
                          <div contenteditable="true" id="MASECTION" maconstraint="((CHKPROP(ITEM.OPTIONS,'SOCIAL_FB')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_TWITTER')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_INSTAGRAM')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_YOUTUBE')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_PINTEREST')=1) OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_WHATSAPP')=1)  OR (CHKPROP(ITEM.OPTIONS,'SOCIAL_GOOGLEPLUS')=1)) AND ITEM.LINK_URL <> ''" mahidediv="TRUE" maparameter="">
                            <!-- Begin social share icons -->
                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                             <tr>
-                               <td align="center" style="padding-left:10px;padding-right:10px;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;-webkit-text-size-adjust:none;" valign="top">
-                                  <table>
+                            <tr>
+                               <td align="center" style="padding-bottom:10px;padding-left:10px;padding-right:10px;font-family:Arial,helvetica,sans-serif;font-size:16px;line-height:1.4;-webkit-text-size-adjust:none;" valign="top">
+                                  <table style="padding-top:0px;padding-bottom:0px;">
+                                    <tr>
+                                      <td colspan="10" style="~DYNCONTENT.SHARE_TEXT_CSS~" align="center">~DYNCONTENT.SHARE_TEXT~</td>
+                                    </tr>
                                     <tr>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_FB')=1) AND (DYNCONTENT.SHARE_FB_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          &nbsp;<a href="~PROBE(600)~">~DYNCONTENT.SHARE_FB_ICON~</a>&nbsp;
+                                          <a href="~PROBE(600)~">~DYNCONTENT.SHARE_FB_ICON~</a>
                                         </td>
                                       </div>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_TWITTER')=1) AND (DYNCONTENT.SHARE_TWITTER_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          &nbsp;<a href="~PROBE(601)~">~DYNCONTENT.SHARE_TWITTER_ICON~</a>&nbsp;
+                                          <a href="~PROBE(601)~">~DYNCONTENT.SHARE_TWITTER_ICON~</a>
                                         </td>
                                       </div>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_INSTAGRAM')=1) AND (DYNCONTENT.SHARE_INSTAGRAM_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          &nbsp;<a href="~PROBE(602)~">~DYNCONTENT.SHARE_INSTAGRAM_ICON~</a>&nbsp;
+                                          <a href="~PROBE(602)~">~DYNCONTENT.SHARE_INSTAGRAM_ICON~</a>
                                         </td>
                                       </div>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_YOUTUBE')=1) AND (DYNCONTENT.SHARE_YOUTUBE_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          &nbsp;<a href="~PROBE(603)~">~DYNCONTENT.SHARE_YOUTUBE_ICON~</a>&nbsp;
+                                          <a href="~PROBE(603)~">~DYNCONTENT.SHARE_YOUTUBE_ICON~</a>
                                         </td>
                                       </div>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_PINTEREST')=1) AND (DYNCONTENT.SHARE_PINTEREST_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          &nbsp;<a href="~PROBE(604)~">~DYNCONTENT.SHARE_PINTEREST_ICON~</a>&nbsp;
+                                          <a href="~PROBE(604)~">~DYNCONTENT.SHARE_PINTEREST_ICON~</a>
                                         </td>
                                       </div>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_GOOGLEPLUS')=1) AND (DYNCONTENT.SHARE_GOOGLEPLUS_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          &nbsp;<a href="~PROBE(606)~">~DYNCONTENT.SHARE_GOOGLEPLUS_ICON~</a>&nbsp;
+                                          <a href="~PROBE(606)~">~DYNCONTENT.SHARE_GOOGLEPLUS_ICON~</a>
                                         </td>
                                       </div>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_WHATSAPP')=1) AND (DYNCONTENT.SHARE_WHATSAPP_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          <span class="mobileShow" style="display: none;mso-hide:all;">&nbsp;<a href="~PROBE(605)~">~DYNCONTENT.SHARE_WHATSAPP_ICON~</a>&nbsp;</span>
+                                          <span class="mobileShow" style="display: none;mso-hide:all;">&nbsp;<a href="~PROBE(605)~">~DYNCONTENT.SHARE_WHATSAPP_ICON~</a></span>
                                         </td>
                                       </div>
                                       <div contenteditable="true" id="MASECTION" maconstraint="(CHKPROP(ITEM.OPTIONS,'SOCIAL_MAIL')=1) AND (DYNCONTENT.SHARE_MAIL_ICON<>'')" mahidediv="TRUE" maparameter="">
                                         <td>
-                                          &nbsp;<a href="~PROBE(607)~">~DYNCONTENT.SHARE_MAIL_ICON~</a>&nbsp;
+                                          <a href="~PROBE(607)~">~DYNCONTENT.SHARE_MAIL_ICON~</a>
                                         </td>
                                       </div>
                                     </tr>
                                   </table>
-
                                </td>
-                             </tr>
-                             <tr>
-                               <td height="16" style="font-size:16px;line-height:16px;padding:0px;">&nbsp;</td>
                              </tr>
                            </table>
                            <!-- END social share icons -->

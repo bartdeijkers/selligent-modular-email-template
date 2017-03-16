@@ -1,3 +1,8 @@
+v2.7.8.2
++ [added] container SHARE_TEXT
++ [added] container SHARE_TEXT_CSS
++ changed Google+ Share intent url
+
 v2.7.8.1
 - Removed container OPTIN_2
 - Removed container SHORTWELCOME_1
