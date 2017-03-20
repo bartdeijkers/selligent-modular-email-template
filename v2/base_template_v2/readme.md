@@ -233,16 +233,7 @@ Upload and change base path in template to use.
 
 | Key | Value | Default | Template version |
 | --- | --- | --- | --- |
-| fa-play-circle | Play Circle | | 2.2 |
-| fa-chevron-right | Chevron Right | | 2.2 |
-| fa-caret-right | Caret Right | | 2.2 |
-| fa-facebook | Facebook | | 2.2 |
-| fa-twitter | Twitter | | 2.2 |
-| fa-instagram | Instagram | | 2.2 |
-| fa-pinterest | Pinterest | | 2.2 |
-| fa-google-plus | Google Plus | | 2.2 |
-| fa-whatsapp | Whatsapp | | 2.2 |
-| fa-youtube | youtube | | 2.2 |
+
 
 
 #### **BUTTON_ICON_POSITION**
@@ -373,7 +364,6 @@ Upload and change base path in template to use.
 
 | Parameter | Type | Default | Notes | Template version |
 | --- | --- | --- | --- | --- |
-| PREHEADER | TEXT | | DEPRECATED | 2.2 |
 | ARTICLES | CONTAINER | | Must contain 'MAIN' filter | 2.2 |
 | HEADER | Html | | DEPRECATED? | 2.2 |
 | CONTENT_BACKGROUND_COLOR | TEXT | | | 2.2 |
