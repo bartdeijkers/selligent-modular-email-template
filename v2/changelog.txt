@@ -1,6 +1,7 @@
 v2.7.8.3
 - rewritten BUTTON_ICON
 - update read.me
++ Added WRAPPER_BACKGROUND_COLOR in body
 
 v2.7.8.2
 + [added] container SHARE_TEXT

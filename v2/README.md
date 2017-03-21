@@ -435,6 +435,10 @@ If you want to import the article structure. You can use the ARTICLES_BRANDNAME_
 If you use an actionlist (for example the service mail), please use the servicemail.json for the right JSON structure. The JSON structure is an example, you don't have to use all the article fieldnames.
 
 
+## Styles
+As of v2.7.8 the styles are no longer placed in a section. There is a component/container named "STYLES". This is where you put your styles. The container is now placed in de <head> section. This was done because prior v2.7.8 the base template was not repsonsive with Gmail.
+
+
 ### Wrappers / content background colors
 Basicly there are 3 sections :
 
