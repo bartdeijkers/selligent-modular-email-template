@@ -18,7 +18,7 @@
      <div id="adminheader" style="font-size:13px;font-weight:bold;padding:5px;"><a id="closeAdminHeaderbutton" href="javascript:void(0)">[x]</a> Blocks:</div><br />
      <div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
        <div contenteditable="TRUE" id="MAITEM" MACLASS="admin_row">
-         <div STYLE="font-size:13px;border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'HIDE_DIVIDER')=1,fff,999)~" class="admin_row_wrapper" style="display:block">
+         <div STYLE="display:block;font-size:13px;border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'HIDE_DIVIDER')=1,fff,999)~" class="admin_row_wrapper">
            <span style="font-family:consolas,courier,monotype;font-size:13px;">~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,1,)~~IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,&frac12;,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,&#8531;,)~~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,&frac14;,)~</span> | ~ITEM.REPORTING_TITLE~ <span style="color:#999">~IF(CHKPROP(ITEM.OPTIONS,'ADVERTORIAL')=1,[ad],)~~IF(CHKPROP(ITEM.OPTIONS,'NO_INNER_PADDING')=1,[no_padding],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_HIDE')=1,[mobile_hide],)~~IF(CHKPROP(ITEM.OPTIONS,'MOBILE_FULLWIDTH')=1,[mobile_full],)~~IF(CHKPROP(ITEM.OPTIONS,'DESKTOP_RIGHT')=1,[desktop_right],)~</span>
          </div>
        </div>
