@@ -333,14 +333,14 @@ Upload and change base path in template to use.
 | 0 | Web Version | Blank | | 2.2 |
 | 9 | List Unsubscribe | Flow | | 2.2 |
 | 100 | Homepage | Url | http://www.my.site/ | 2.2 |
-| 101 | Hyperlink | Url | ~ITEM.LINK_URL~ | 2.2 |
+| 101 | Hyperlink | Url | `~ITEM.LINK_URL~` | 2.2 |
 | 102 | Privacy and Cookies | Url | http://www.my.site/ | 2.2 |
 | 103 | Unsubscribe | Flow | | 2.2 |
 | 104 | Contact | Url | http://www.my.site/ | 2.2 |
 | 105 | Advertise | Url | http://www.my.site/ | 2.2 |
 | 106 | Data privacy policy | Url | http://www.my.site/ | 2.2 |
-| 107 | Brand title url | Url | ~DYNCONTENT.BRAND_TITLE_URL~ | 2.2 |
-| 300 | Logo url | Url | ~DYNCONTENT.LOGO_URL~ | 2.2 |
+| 107 | Brand title url | Url | `~DYNCONTENT.BRAND_TITLE_URL~` | 2.2 |
+| 300 | Logo url | Url | `~DYNCONTENT.LOGO_URL~` | 2.2 |
 | 301 | Social 1 - Facebook | Url | https://www.facebook.com/ | 2.2 |
 | 302 | Social 2 - Twitter | Url | https://twitter.com/ | 2.2 |
 | 303 | Social 3 - Instagram | Url | https://www.instagram.com/ | 2.2 |
