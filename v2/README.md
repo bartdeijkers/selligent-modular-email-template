@@ -351,14 +351,14 @@ Upload and change base path in template to use.
 | 308 | Social 8 | Url | http://www.my.site/ | 2.5 |
 | 309 | Social 9 | Url | http://www.my.site/ | 2.5 |
 | 310 | Social 10 | Url | http://www.my.site/ | 2.5 |
-| 600 | FB Share | Url | http://www.facebook.com/sharer.php?u=~(URLENCODE(ITEM.LINK_URL))~ | 2.7.2 |
-| 601 | Twitter Share | Url | http://twitter.com/intent/tweet?text=~(URLENCODE(ITEM.TITLE))~%20~(URLENCODE(ITEM.LINK_URL))~ | 2.7.2 |
+| 600 | FB Share | Url | `http://www.facebook.com/sharer.php?u=~(URLENCODE(ITEM.LINK_URL))~` | 2.7.2 |
+| 601 | Twitter Share | Url | `http://twitter.com/intent/tweet?text=~(URLENCODE(ITEM.TITLE))~%20~(URLENCODE(ITEM.LINK_URL))~` | 2.7.2 |
 | 602 | Instagram Share | Url | http://www.instagram.com | 2.7.2 |
 | 603 | YouTube Share | Url | http://www.youtube.com | 2.7.2 |
 | 604 | Pinterest Share | Url | http://www.pinterest.com | 2.7.2 |
-| 605 | Whatsapp Share | Url | whatsapp://send?text=~ITEM.LINK_URL~ | 2.7.2 |
-| 606 | Google+ Share | Url | https://plus.google.com/share?url=~(URLENCODE(ITEM.LINK_URL))~ | 2.7.2 |
-| 607 | Mail Share | Url | mailto:?subject=~ITEM.TITLE~&body=~ITEM.TITLE~ ~ITEM.LINK_URL~ | 2.7.2 |
+| 605 | Whatsapp Share | Url | `whatsapp://send?text=~ITEM.LINK_URL~` | 2.7.2 |
+| 606 | Google+ Share | Url | `https://plus.google.com/share?url=~(URLENCODE(ITEM.LINK_URL))~` | 2.7.2 |
+| 607 | Mail Share | Url | `mailto:?subject=~ITEM.TITLE~&body=~ITEM.TITLE~ ~ITEM.LINK_URL~` | 2.7.2 |
 
 
 ### Designer Content Parameters
@@ -400,11 +400,11 @@ Upload and change base path in template to use.
 | ADVERTORIAL_BACKGROUND_COLOR | TEXT | eeeeee | Advertorial background color | 2.3 |
 | ADVERTORIAL_TEXT_CSS | TEXT |  |  | 2.7.3 |
 | ADVERTORIAL_CSS | TEXT |  |  | 2.7.8 |
-| SOCIAL_1 | TEXT | <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;"> | Social icon 1 | 2.5 |
-| SOCIAL_2 | TEXT | <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;"> | Social icon 2 | 2.5 |
-| SOCIAL_3 | TEXT | <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;"> | Social icon 3 | 2.5 |
-| SOCIAL_4 | TEXT | <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;"> | Social icon 4 | 2.5 |
-| SOCIAL_5 | TEXT | <img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;"> | Social icon 5 | 2.5 |
+| SOCIAL_1 | TEXT | `<img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;">` | Social icon 1 | 2.5 |
+| SOCIAL_2 | TEXT | `<img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;">` | Social icon 2 | 2.5 |
+| SOCIAL_3 | TEXT | `<img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;">` | Social icon 3 | 2.5 |
+| SOCIAL_4 | TEXT | `<img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;">` | Social icon 4 | 2.5 |
+| SOCIAL_5 | TEXT | `<img border="0" src="https://placeholdit.imgix.net/~text?w=128&h=128"  width="32" style="display:block;width:32px;max-width:128px;">` | Social icon 5 | 2.5 |
 | SOCIAL_6 | TEXT |  | Social icon 6 | 2.5 |
 | SOCIAL_7 | TEXT |  | Social icon 7 | 2.5 |
 | SOCIAL_8 | TEXT |  | Social icon 8 | 2.5 |
