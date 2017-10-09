@@ -1,0 +1,13 @@
+{
+  "name": "ocs-base-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "string": "^3.3.3"
+  },
+  "devDependencies": {},
+  "author": "Fransjo Leihitu, fransjo.leihitu@sanoma.com",
+  "license": "ISC"
+}

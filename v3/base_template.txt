@@ -1,0 +1,18 @@
+<DIV CONTENTEDITABLE=FALSE ID=MASECTION MACONSTRAINT="DYNCONTENT.WEBVERSION_TEXT <> ''" mahidediv="TRUE" MAPARAMETER="" >
+  ~(STRIPHTML(DYNCONTENT.WEBVERSION_TEXT))~
+  ~PROBE(0)~
+  ------------------------------------------------
+</DIV>
+
+
+<div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
+  <div contenteditable="TRUE" id="MAITEM" mahidediv="TRUE">
+  ~(STRIPHTML(ITEM.TITLE))~
+  ~(STRIPHTML(ITEM.SUBTITLE))~
+  ~(STRIPHTML(ITEM.CONTENT))~
+  <div contenteditable="true" id="MASECTION" maconstraint="ITEM.LINK<>''" mahidediv="TRUE" maparameter="">
+    ~PROBE(101)~
+  </div>
+  ------------------------------------------------
+</div>
+</div>

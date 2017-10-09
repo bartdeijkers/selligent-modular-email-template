@@ -1,0 +1,3 @@
+- Image carrousel functionality
+- Video integration
+- More NodeJS build scripts for automation

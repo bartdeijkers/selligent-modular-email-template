@@ -1,0 +1,215 @@
+V3.0.0.0
++ [added] Button preset functionality. Requires Selligent version 6.3.4+
+- Basis for á la carte selection of features
+- Completely reworked code to a more vanilla type of template
+- [removed] header 
+- [removed] footer
+- [removed] closealert
+
+v2.8.2.0
+- removed ITEM.ARTICLE_HEIGHT on height= , replaced with responsive styles
+
+v2.8.1.9
++ [added] article field IMAGE_CSS
++ [added] article field IMAGE_MAX_WIDTH
++ [added] article field ARTICLE_HEIGHT
++ [added] article field IMAGE_ALIGN
+
+v2.8.1.8
+- [DEPRECATED] [removed] article.options HIDE_DIVIDER
+- [DEPRECATED] [removed] article.options NO_INNER_PADDING
+- [added] article.options NO_LEFT_INNER_PADDING
+- [added] article.options NO_RIGHT_INNER_PADDING
+- [added] article.options RESET_INNER_PADDING_MOBILE
+- [added] article.options SHOW_DIVIDER (default the divider is now hidden)
+
+v2.8.1.7
+- [removed] article button_options key : BUTTONS_PADDING
+- [removed] article button_options key : BUTTONS_BOTTOM_PADDING
+- [added] article button_options key : BUTTONS_REMOVE_PADDING_LEFT
+- [added] article button_options key : BUTTONS_REMOVE_PADDING_RIGHT
+- [added] article button_options key : BUTTONS_REMOVE_PADDING_BOTTOM
+
+v2.8.1.6
++ [added] article field FIRST_ROW_CSS
+
+v2.8.1.5
++ [added] Container LOGO_ALT_TEXT
+
+v2.8.1.4
++ [added] Article field TEXT_OPTIONS
+- [removed] Article options CENTER_TITLE,CENTER_SUBTITLE,CENTER_CONTENT,TITLE_IMAGE,TITLE_TOP_PADDING,TITLE_BOTTOM_PADDING,SUBTITLE_TOP_PADDING
+- update documentation
+
+v.2.8.1.3
++ [added] Article field SHARE_OPTIONS
+- [removed] Article options SOCIAL_FB,SOCIAL_TWITTER,SOCIAL_INSTAGRAM,SOCIAL_YOUTUBE,SOCIAL_PINTEREST,SOCIAL_WHATSAPP,SOCIAL_GOOGLEPLUS,SOCIAL_MAIL
+- [removed] html for share instagram and youtube
++ [added] Article field SLIDER_OPTIONS
+- [removed] Article option SLIDER_BEFORE_TITLE
+- readme,json and xml update
++ [added] container CLOSE_ALERT_ICON_POSITIVE
++ [added] container CLOSE_ALERT_ICON_NEGATIVE
++ [added] NodeJS script create_base_html.js to create base_template.html
++ [added] NodeJS script create_servicemail_content.js to create servicemail content variant
++ [added] NodeJS script create_servicemail_textversion.js to create servicemail textversion variant
+
+v.2.8.1.2
++ [added] Article option SLIDER_BEFORE_TITLE
+- Slider only visible with blocktype FULLWIDTH
+
+v.2.8.1.1
++ [added] Article field SLIDER_IMAGE_1
++ [added] Article field SLIDER_URL_1
++ [added] Article field SLIDER_IMAGE_2
++ [added] Article field SLIDER_URL_2
++ [added] Article field SLIDER_IMAGE_3
++ [added] Article field SLIDER_URL_3
++ [added] Probe 651
++ [added] Probe 652
++ [added] Probe 653
+
+
+v.2.8.1
+- [removed] ITEM.BUTTON_ICON linked with color.
++ [added] css support to target iOS10
+
+v.2.7.8.2
+- removed nbsp at whatsapp share icon
++ [added] article social share icons
+- Close Alert icons variable url
+- update read.me
+- changed file structures
+
+v.2.7.8.1
++ [added] container SHARE_TEXT
++ [added] container SHARE_TEXT_CSS
++ changed Google+ Share intent url
+
+v2.7.8
++ [added] container ADVERTORIAL_CSS
++ [added] Article option ADD_PADDING_BOTTOM_IMAGE
++ added image max width in read.me
++ [added] container USER_CUSTOM_DATA_BACKGROUND_COLOR
++ [added] Article field CONTENT_CSS
++ moved top padding in main content table
++ [added] Article option FILL_PADDING_BACKGROUND_COLOR
++ Gmail mobile full width fix
+
+v2.7.7
++ [added] container SHORTWELCOME_1
++ [added] container OPTIN_2
++ [added] probe 1000
++ changed Google+ Share intent url
+
+v2.7.6
+- fixed logo max width css
+
+v2.7.5
++ [added] Container STYLES
+- Removed the CSS from the section to the HTML Header in SIM properties
+
+v2.7.4
++ [added] Article option ADD_PADDING_TOP
++ [added] Article option SUBTITLE_TOP_PADDING
+
+v2.7.3
++ [added] container ADVERTORIAL_TEXT_CSS
+
+v2.7.2
++ [added] Article options :
+SOCIAL_FB
+SOCIAL_TWITTER
+SOCIAL_INSTAGRAM
+SOCIAL_YOUTUBE
+SOCIAL_PINTEREST
+SOCIAL_WHATSAPP
+SOCIAL_GOOGLEPLUS
+SOCIAL_MAIL
++ [added] container SHARE_FB_ICON
++ [added] container SHARE_TWITTER_ICON
++ [added] container SHARE_INSTAGRAM_ICON
++ [added] container SHARE_YOUTUBE_ICON
++ [added] container SHARE_PINTEREST_ICON
++ [added] container SHARE_WHATSAPP_ICON
++ [added] container SHARE_GOOGLEPLUS_ICON
++ [added] container SHARE_MAIL_ICON
+
+v2.7.1
+- [removed] container CLOSE_ALERT_COLOR
++ [added] container CLOSE_ALERT_CSS
++ [added] container CLOSE_ALERT_TEXT_COLOR
++ [added] container CLOSE_ALERT_TEXT_CSS
++ [added] container WRAPPER_CSS
++ [added] container WRAPPER_BACKGROUND_COLOR
+
+v2.6.4.1 / v2.6.4.2
++ [added] container LOGO_ALIGN
++ [added] container CLOSE_ALERT_TEXT
++ [added] container CLOSE_ALERT_URL
+- optional to show/hide unsubscribe text
+- custom header text
+- max 600px header Outlook
+
+v2.6.4
+- [added] article option TITLE_TOP_PADDING
+- [added] article field LINK_TEXT_FONTSIZE
+- [added] article field BUTTON_PADDING
+- [added] article field BUTTON_OUTLOOK_CSS
+- [added] article field BUTTON_WEBVERSION_CSS
+- better css control on title and subtitle
+
+v2.6.3
+- [added] container BACKGROUND_IMAGE field
+- textversion with articles
+- FIXED blue textlinks in Outlook App for title,subtitle,content and footer links
+
+v2.6.2
+- [added] article field IMAGE_ALT_TEXT
+
+v2.6.1
+- [added] article option NO_PADDING_BOTTOM
+- in outlook the footer was not 600px max
+
+v2.6
+- [added] article field BUTTON_RADIUS_OUTLOOK
+- [added] article field BUTTON_RADIUS_WEBVERSION
+
+v2.5
+- [added] container SOCIAL_1
+- [added] container SOCIAL_2
+- [added] container SOCIAL_3
+- [added] container SOCIAL_4
+- [added] container SOCIAL_5
+- [added] container SOCIAL_6
+- [added] container SOCIAL_7
+- [added] container SOCIAL_8
+- [added] container SOCIAL_9
+- [added] container SOCIAL_10
+
+
+v2.4
+- [added] container LOGO_MAX_WIDTH , default value : 580
+
+v2.3.5
+- webversion button link_text_align bug fixed
+
+v2.3.4
+- social icon Google Plus
+
+v2.3.3
+- various button optimalizations
+
+v2.3.2
+- bugfixed height normal left/center/right button in outlook
+- bugfix user custom data Logo
+- changed button line-height webversion
+
+v2.3.1
+- bugfixed height normal fullwidth button in outlook
+
+v2.3
+- [added] container ADVERTORIAL_BACKGROUND_COLOR , default value : cccccc
+- added changelog
+- optimizing advertorial text
+- updated readme with template version
