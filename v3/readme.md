@@ -29,17 +29,17 @@ You are offcourse free to rename the tables to anything you like.
 
 use the 'Import Structure' button under tab 'Design' within the 
 Campaign 'lists' section using the following file:
-'''
+```
 Documentation > ARTICLES_NEWSLETTER.xml
-'''
+```
 
 * ARTICLES_BUTTON_PRESETS
 
 use the 'Import Structure' button under tab 'Design' within the 
 Campaign 'lists' section using the following file:
-'''
+```
 Documentation > ARTICLES_BUTTON_PRESETS.xml
-'''
+```
 
 
 ## Core article database columns
@@ -179,9 +179,9 @@ For example the value of OPTIONS could be "SHOW_DIVIDER|ADD_MEDIA_PADDING_TOP".
 ---------------
 
 example DEFAULT_BUTTON_PRESET
-'''
+```
 280px;38px;99c739;https://imgur.com/clZqdfM.gif;7ea613;3px;ffffff;13px;center;http://via.placeholder.com/16x16;16px;right;null;10px;null;10px;Arial,sans-serif
-'''
+```
 
 1 width
 2 height
