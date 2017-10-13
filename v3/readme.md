@@ -182,24 +182,25 @@ example DEFAULT_BUTTON_PRESET
 ```
 280px;38px;99c739;https://imgur.com/clZqdfM.gif;7ea613;3px;ffffff;13px;center;http://via.placeholder.com/16x16;16px;right;null;10px;null;10px;Arial,sans-serif
 ```
-
-1 width
-2 height
-3 bg-color
-4 bg-image
-5 border-color
-6 border-radius
-7 font-color
-8 font-size
-9 text-postion
-10 icon-image
-11 icon-image-width
-12 icon_position
-13 padding-top
-14 padding-right
-15 padding-bottom
-16 padding-left
-17 font-family
+| CSV index | field | Default value | Template version |
+| --- | --- | --- |
+| 1 | width | null | v3.0.0 |
+| 2 | height | null | v3.0.0 |
+| 3 | bg-color | null | v3.0.0 |
+| 4 | bg-image | null | v3.0.0 |
+| 5 | border-color | null | v3.0.0 |
+| 6 | border-radius | null | v3.0.0 |
+| 7 | font-color | null | v3.0.0 |
+| 8 | font-size | null | v3.0.0 |
+| 9 | text-postion | null | v3.0.0 |
+| 10 | icon-image | null | v3.0.0 |
+| 11 | icon-image-width | null | v3.0.0 |
+| 12 | icon_position | null | v3.0.0 |
+| 13 | padding-top | null | v3.0.0 |
+| 14 | padding-right | null | v3.0.0 |
+| 15 | padding-bottom | null | v3.0.0 |
+| 16 | padding-left | null | v3.0.0 |
+| 17 | font-family | null | v3.0.0 |
 
 empty value must be 'null' in order to make this work
 
