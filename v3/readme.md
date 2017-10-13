@@ -182,6 +182,7 @@ example DEFAULT_BUTTON_PRESET
 ```
 280px;38px;99c739;https://imgur.com/clZqdfM.gif;7ea613;3px;ffffff;13px;center;http://via.placeholder.com/16x16;16px;right;null;10px;null;10px;Arial,sans-serif
 ```
+
 | CSV index | field | Default value | Template version |
 | --- | --- | --- |
 | 1 | width | null | v3.0.0 |
