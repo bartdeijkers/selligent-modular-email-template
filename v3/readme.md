@@ -1,4 +1,4 @@
-# Sanoma Base SIM template
+# selligent-modular-email-template
 Template version : v3.0
 --------------------------
 
