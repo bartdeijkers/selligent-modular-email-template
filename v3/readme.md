@@ -184,7 +184,7 @@ example DEFAULT_BUTTON_PRESET
 ```
 
 | CSV index | field | Default value | Template version |
-| --- | --- | --- || --- |
+| --- | --- | --- | --- |
 | 1 | width | null | v3.0.0 |
 | 2 | height | null | v3.0.0 |
 | 3 | bg-color | null | v3.0.0 |
