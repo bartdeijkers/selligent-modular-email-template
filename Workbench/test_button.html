@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>button tests</title>
+</head>
+<body>
+
+<h1>button test</h1>
+<p><strong>This file is used as the workbench to create the generated buttons templating code</strong></p>
+
+<p> 
+The button preset consists of a pipe separated multiple values string.
+<br /> Each value is dedicated for a specific button option:</p>
+<pre>
+
+
+   <FIELD HASKEYS="FALSE" MULTIVALUE="FALSE" LEN="4" TYPE="INTEGER" NAME="ID"/>
+   <FIELD HASKEYS="FALSE" MULTIVALUE="FALSE" LEN="16" TYPE="DATETIME" NAME="CREATED_DT"/>
+   <FIELD HASKEYS="FALSE" MULTIVALUE="FALSE" LEN="16" TYPE="DATETIME" NAME="MODIFIED_DT"/>
+   <FIELD HASKEYS="FALSE" MULTIVALUE="FALSE" LEN="200" TYPE="TEXT" NAME="TAXONOMY"/>
+   <FIELD HASKEYS="FALSE" MULTIVALUE="FALSE" LEN="5" TYPE="TEXT" NAME="LANGUAGE"/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 200px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 38px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 99c739" MULTIVALUE="FALSE" LEN="6" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: http://example.org/200x38.gif" MULTIVALUE="FALSE" LEN="250" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 7ea613" MULTIVALUE="FALSE" LEN="6" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 3px" MULTIVALUE="FALSE" LEN="50" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: ffffff" MULTIVALUE="FALSE" LEN="6" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 13px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: center" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: http://example.org/16x16.gif" MULTIVALUE="FALSE" LEN="250" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 16px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: right" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 10px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 10px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 10px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: 10px" MULTIVALUE="FALSE" LEN="10" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: sans-serif" MULTIVALUE="FALSE" LEN="100" TYPE="TEXT" NAME=""/>
+   <FIELD HASKEYS="FALSE" DESCRIPTION="Example: font-weight:bold;" MULTIVALUE="FALSE" LEN="350" TYPE="TEXT" NAME=""/>
+
+1 WIDTH
+2 HEIGHT
+3 BG_COLOR
+4 BG_IMAGE
+5 BORDER_COLOR
+6 BORDER_RADIUS
+7 FONT_COLOR
+8 FONT_SIZE
+9 TEXT_POSITION
+10 ICON_IMAGE
+11 ICON_IMAGE_WIDTH
+12 ICON_POSITION
+13 PADDING_TOP
+14 PADDING_RIGHT
+15 PADDING_BOTTOM
+16 PADDING_LEFT
+17 FONT_FAMILY
+18 FONT_CSS
+</pre>
+<p>example value for component:  DEFAULT_BUTTON_PRESET</p>
+<pre>
+100%|38px|99c739|https://imgur.com/clZqdfM.gif|7ea613|3px|ffffff|13px|center|http://via.placeholder.com/16x16|16px|right|null|10px|null|10px|Arial,sans-serif|text-decoration:underline
+
+</pre>
+empty value must be 'null' in order to make this work
+also selligent version must be 6.3.4+
+</pre>
+<!-- TODO changes
+-- find & replace for text equivalent of csv index mumber. for example {1} to ARTICLE_PROPERTY('BUTTON_PRESETS\MAIN',ITEM.BUTTON_PRESET,'WIDTH') etc.
+-- fix padding-right behaviour
+-->
+<pre>
+REGEX:
+
+to base from DEFAULT_BUTTON_PRESET
+GETPROP\(DYNCONTENT\.DEFAULT_BUTTON_PRESET,([0-9]*?),'\|'\)
+TO
+{\1}
+
+to base from ITEM.BUTTON_PRESET
+GETPROP\(ITEM\.BUTTON_PRESET,([0-9]*?),'\|'\)
+TO
+{\1}
+
+default button replace:
+(\{)([0-9]*?)(\})
+TO
+GETPROP(DYNCONTENT.DEFAULT_BUTTON_PRESET,\2,'|')
+
+ITEM button preset replace:
+(\{)([0-9]*?)(\})
+TO
+GETPROP(ITEM.BUTTON_PRESET,\2,'|')
+</pre>
+
+
+<DIV id=MASECTION contentEditable=true MACONSTRAINT="DYNCONTENT.DEFAULT_BUTTON_PRESET<>'null'" MAPARAMETER="" MAHIDEDIV="TRUE">
+ <!-- Begin default preset button v3.0.1 -->
+<div><!--[if mso]>
+  <v:~(IF({6}='null' OR {6}='0','rect','roundrect'))~ xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="~PROBE(101)~" style="height:~({2})~;v-text-anchor:middle;width:~({1})~;" ~(IF({6}='null' OR {6}='0','','arcsize="'&TOINT(FMUL(FDIV(100,REPLACE({2},'px','')),{6}))&'%"'))~ ~(IF({5}<>'null','strokecolor="'&{5}&'"','stroke="f"'))~ ~(IF({4}='null','fillcolor="'&(IF({3}<>'null',{3},'#FFFFFF'))&'"','fill="t"'))~ >
+  ~(IF({4}<>'null','<v:fill type="tile" src="'&{4}&'" '&(IF({3}<>'null','color="'&{3}&'"',''))&' />',''))~
+  <w:anchorlock/>
+<DIV id=MASECTION contentEditable=true MACONSTRAINT="{5}<>'null'" MAPARAMETER="" MAHIDEDIV="TRUE">
+<center>
+  
+~('<')~table width="100%" border='0' cellpadding="0" cellspacing="0" valign="middle"  style="width:100%;height:~(IF({2}<>'null',{2},'0px'))~;color:~(IF({7}<>'null',{7},'#000001'))~;font-family:~(IF({17}<>'null',{17},'sans-serif'))~;font-size:~(IF({8}<>'null',{8},'16px'))~;"~('>')~
+    ~('<')~tr~('>')~
+     <div contenteditable="true" id="MASECTION" maconstraint="{10}<>'null' AND ({12}='null' OR {12}='LEFT')" mahidediv="TRUE" maparameter="">
+     ~('<')~td width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" align="right" style="padding-top:~(IF({13}<>'null',{13},'0px'))~;padding-bottom:~(IF({15}<>'null',{15},'0px'))~;padding-left:~(IF({16}<>'null',{16},'10px'))~"~('>')~
+       <img border="0" src="~(h2u({10}))~" style="display:block;max-width:~(IF({11}<>'null',{11},'16px'))~;height:auto;" width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" />
+     ~('<')~/td~('>')~
+     </div>
+     ~('<')~td style="padding-top:~(IF({13}<>'null',{13},'0px'))~;padding-bottom:~(IF({15}<>'null',{15},'0px'))~;padding-left:~(IF({16}='null' AND ({12}='null' OR {12}='LEFT'),'10px',{16}))~;padding-right:~(IF({14}='null' OR ({10}<>'null' AND {12}='right'),'10px',{14}))~;~(IF({9}<>'null','text-align:'&{9}&';',''))~"~('>')~
+     ~(IF({10}<>'null' AND ({12}='null' OR {12}='LEFT') , '&nbsp;' , ''))~
+     <span style="color:~(IF({7}<>'null',{7},'#000001'))~;font-family:~(IF({17}<>'null',{17},'sans-serif'))~;font-size:~(IF({8}<>'null',{8},'16px'))~;line-height:~({2})~;text-align:~({9})~;text-decoration:none;-webkit-text-size-adjust:none;~({18})~" class="webfont">
+ 
+       ~DYNCONTENT.LINK_TEXT~
+  
+     </span>
+     ~('<')~/td~('>')~
+     <div contenteditable="true" id="MASECTION" maconstraint="{10}<>'null' AND {12}='RIGHT'" mahidediv="TRUE" maparameter="">
+     ~('<')~td width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" align="right" style="padding-top:~(IF({13}<>'null',{13},'0px'))~;padding-bottom:~(IF({15}<>'null',{15},'0px'))~;padding-right:~(IF({14}<>'null',{14},'10px'))~"~('>')~
+       <img border="0" src="~(h2u({10}))~" style="display:block;max-width:~(IF({11}<>'null',{11},'16px'))~;height:auto;" width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" />
+     ~('<')~/td~('>')~
+     </div>
+
+     ~('<')~/tr~('>')~
+  ~('<')~/table~('>')~
+
+</center></v:~(IF({6}='null' OR {6}='0','rect','roundrect'))~>
+</div>
+
+<DIV id=MASECTION contentEditable=true MACONSTRAINT="{5}='null'" MAPARAMETER="" MAHIDEDIV="TRUE">
+<center>
+</div> 
+  <![endif]--><a href="~PROBE(101)~" style="width:~({1})~;line-height:~({2})~;~(IF({3}<>'null','background-color:'&{3}&';',''))~;~(IF({4}<>'null','background-image:url('&{4}&');',''))~border:1px solid ~({5})~;~(IF({6}='null' OR {6}='0','','border-radius:'&{6}&';'))~color:~({7})~;display:inline-block;font-family:~(IF({17}<>'null',{17},'sans-serif'))~;font-size:~({8})~;text-align:~({9})~;text-decoration:none;-webkit-text-size-adjust:none;~(IF({5}<>'null','mso-hide:all;',''))~">
+   
+~('<')~table width="100%" border='0' cellpadding="0" cellspacing="0" valign="middle" style="width:100%;height:~(IF({2}<>'null',{2},'0px'))~;color:~(IF({7}<>'null',{7},'#000001'))~;font-family:~(IF({17}<>'null',{17},'sans-serif'))~;font-size:~(IF({8}<>'null',{8},'16px'))~;~(IF({5}<>'null','mso-hide:all;',''))~"~('>')~
+    ~('<')~tr~('>')~
+     <div contenteditable="true" id="MASECTION" maconstraint="{10}<>'null' AND ({12}='null' OR {12}='LEFT')" mahidediv="TRUE" maparameter="">
+     ~('<')~td width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" align="right" style="padding-top:~(IF({13}<>'null',{13},'0px'))~;padding-bottom:~(IF({15}<>'null',{15},'0px'))~;padding-left:~(IF({16}<>'null',{16},'10px'))~"~('>')~
+       <img border="0" src="~(h2u({10}))~" style="display:block;max-width:~(IF({11}<>'null',{11},'16px'))~;height:auto;" width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" />
+     ~('<')~/td~('>')~
+     </div>
+     ~('<')~td style="padding-top:~(IF({13}<>'null',{13},'0px'))~;padding-bottom:~(IF({15}<>'null',{15},'0px'))~;padding-left:~(IF({16}='null' AND ({12}='null' OR {12}='LEFT'),'10px',{16}))~;padding-right:~(IF({14}='null' OR ({10}<>'null' AND {12}='right'),'10px',{14}))~;~(IF({9}<>'null','text-align:'&{9}&';',''))~"~('>')~
+     ~(IF({10}<>'null' AND ({12}='null' OR {12}='LEFT') , '&nbsp;' , ''))~
+     <span style="color:~(IF({7}<>'null',{7},'#000001'))~;font-family:~(IF({17}<>'null',{17},'sans-serif'))~;font-size:~(IF({8}<>'null',{8},'16px'))~;line-height:~({2})~;text-align:~({9})~;text-decoration:none;-webkit-text-size-adjust:none;~({18})~" class="webfont">
+  
+       ~DYNCONTENT.LINK_TEXT~
+   
+     </span>
+     ~('<')~/td~('>')~
+     <div contenteditable="true" id="MASECTION" maconstraint="{10}<>'null' AND {12}='RIGHT'" mahidediv="TRUE" maparameter="">
+     ~('<')~td width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" align="right" style="padding-top:~(IF({13}<>'null',{13},'0px'))~;padding-bottom:~(IF({15}<>'null',{15},'0px'))~;padding-right:~(IF({14}<>'null',{14},'10px'))~"~('>')~
+       <img border="0" src="~(h2u({10}))~" style="display:block;max-width:~(IF({11}<>'null',{11},'16px'))~;height:auto;" width="~(REPLACE(IF({11}<>'null',{11},'16px'),'px',''))~" />
+     ~('<')~/td~('>')~
+     </div>
+
+     ~('<')~/tr~('>')~
+   ~('<')~/table~('>')~
+
+  </a>
+  ~(IF({5}<>'null','','<!--[if mso]></center></v:'&(IF({6}='null' OR {6}='0','rect','roundrect'))&'><![endif]-->'))~
+  </div>
+
+<!-- End default preset button -->
+</DIV>
+
+
+  
+</body>
+</html>

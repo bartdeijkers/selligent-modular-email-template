@@ -1,0 +1,138 @@
+
+<div id="masection" contenteditable="true" maconstraint="ID=0" maparameter="" mahidediv="TRUE">
+  <!-- Begin Version Info -->
+
+  <!--
+    v3.0.1.0
+  -->
+
+  <!-- End Version Info -->
+</div>
+<div id="MACONTAINER" macontenteditable="FALSE" maconstraint="" maparameter="BUTTON_PRESETS\MAIN" matype="" mahidediv="true">
+	<div id="MAITEM" macontenteditable="true">
+		
+	</div>
+</div>
+
+<div contenteditable="true" id="MASECTION" maconstraint="ID=0" mahidediv="TRUE" maparameter="">
+  <!-- Begin admin Overlay -->
+
+  <style type="text/css">
+    /* SIM v6 hidden element fix */
+    .wrapper .MAPANEL { display: inline !important; }
+    DIV {
+      zoom:1;
+      font-size:0;
+      }
+    .admin {
+      position:absolute !important;
+      top:10px;
+      right:10px;
+      width:500px;
+      padding:1px;
+      overflow:auto;
+      max-height:500px;
+      z-index:10000; /* overrule express tool overlay z-index */
+      background:#ffffff;
+      border:1px solid #000001;
+      color:#000001;
+      font-family:Arial,helvetica,sans-serif;
+      font-size:13px;
+      line-height:1;
+      }
+    #admin {
+       right: expression( ( 10 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+       top: expression( ( 10 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+    }
+    .admin_row { padding:5px }
+    .admin_row:hover { background:#EAF0FA; }
+    .hideAdminContentWrapper { background-color:red; }
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    min-width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size:10px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+  </style>
+
+  <div id="admin" class="admin">
+    <div id="adminheader" style="font-size:13px;font-weight:bold;padding:5px;"><a id="closeAdminHeaderbutton" href="javascript:void(0)">
+      [x]</a> Blocks:
+    </div><br />
+    <div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
+      <div contenteditable="TRUE" id="MAITEM" MACLASS="admin_row">
+        <div STYLE="font-size:13px;border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'SHOW_DIVIDER')=1,999,transparent)~" class="admin_row_wrapper">
+          <span style="font-family:consolas,courier,monotype;font-size:13px;">~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,1,)~~IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,&frac12;,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,&#8531;,)~~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,&frac14;,)~</span> | <span class="tooltip">~ITEM.REPORTING_TITLE~
+          <span class="tooltiptext">&nbsp;~(REPLACE(ITEM.OPTIONS,'|','&nbsp;<br />&nbsp;'))~&nbsp;</span></span>
+          
+        </div>
+      </div>
+    </div>
+   </div>
+
+  <script type='text/javascript'>
+    // Bind the functions...
+    document.getElementById('closeAdminHeaderbutton').onmousedown = function () {
+      var adminElement  = getElementsByClassName("admin");
+      if(adminElement) {
+        var maxHeight = adminElement[0].style.maxHeight;
+        adminElement[0].style.maxHeight = (maxHeight != "") ? "" : "50px";
+      }
+       return false;
+    };
+
+    function getElementsByClassName(className) {
+      var found = [];
+      var elements = document.getElementsByTagName("*");
+      for (var i = 0; i < elements.length; i++) {
+        var names = elements[i].className.split(' ');
+        for (var j = 0; j < names.length; j++) {
+          if (names[j] == className) found.push(elements[i]);
+        }
+      }
+      return found;
+    }
+  </script>
+
+
+
+  <!-- End Admin Overlay -->
+</div>
