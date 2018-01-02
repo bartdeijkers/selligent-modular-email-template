@@ -35,15 +35,10 @@
   <!-- Begin Version Info -->
 
   <!--
-    v3.0.1.0
+    v3.0.1.1
   -->
 
   <!-- End Version Info -->
-</div>
-<div id="MACONTAINER" macontenteditable="FALSE" maconstraint="" maparameter="BUTTON_PRESETS\MAIN" matype="" mahidediv="true">
-	<div id="MAITEM" macontenteditable="true">
-		
-	</div>
 </div>
 
 <div contenteditable="true" id="MASECTION" maconstraint="ID=0" mahidediv="TRUE" maparameter="">
@@ -131,8 +126,8 @@
     </div><br />
     <div contenteditable="FALSE" id="MACONTAINER" maconstraint="" mahidediv="TRUE" maparameter="ARTICLES\MAIN">
       <div contenteditable="TRUE" id="MAITEM" MACLASS="admin_row">
-        <div STYLE="font-size:13px;border-bottom: 1px solid #~IF(CHKPROP(ITEM.OPTIONS,'SHOW_DIVIDER')=1,999,transparent)~" class="admin_row_wrapper">
-          <span style="font-family:consolas,courier,monotype;font-size:13px;">~IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,1,)~~IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,&frac12;,)~~IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,&#8531;,)~~IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,&frac14;,)~</span> | <span class="tooltip">~ITEM.REPORTING_TITLE~
+        <div STYLE="font-size:13px;border-bottom: 1px solid #~(IF(CHKPROP(ITEM.OPTIONS,'SHOW_DIVIDER')=1,'999','transparent'))~" class="admin_row_wrapper">
+          <span style="font-family:consolas,courier,monotype;font-size:13px;">~(IF(CHARINDEX('FULLWIDTH',ITEM.BLOCKTYPE)<>-1,'1',''))~~(IF(CHARINDEX('HALFWIDTH',ITEM.BLOCKTYPE)<>-1,'&frac12;',''))~~(IF(CHARINDEX('THIRDWIDTH',ITEM.BLOCKTYPE)<>-1,'&#8531;',''))~~(IF(CHARINDEX('QUARTERWIDTH',ITEM.BLOCKTYPE)<>-1,'&frac14;',''))~</span> | <span class="tooltip">~ITEM.REPORTING_TITLE~
           <span class="tooltiptext">&nbsp;~(REPLACE(ITEM.OPTIONS,'|','&nbsp;<br />&nbsp;'))~&nbsp;</span></span>
           
         </div>
