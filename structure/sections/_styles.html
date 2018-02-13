@@ -37,8 +37,13 @@
   IMG { -ms-interpolation-mode: bicubic; }
   
 
-  @media only screen and (max-width: 640px) {
-    
+  @media only screen and (max-width: 600px) {
+    .mobileErase {
+      display:none !important;
+    }    
+    .mobileShow {
+      display:inline-block !important;
+    }
     .mobileMarginReset {
       padding-left:10px !important;
       padding-right:10px !important;
@@ -53,15 +58,12 @@
     .nomargin { padding: 0px !important; }
     .nomargintop { padding-top: 0px !important; }
     .nomarginbottom { padding-bottom: 0px !important; }
-  }
-
-@media screen and (min-width: 401px) and (max-width: 620px) {
-    .mobileShow {
-      display:inline-block !important;
-    }
     .fullWidth {
       width: 100% !important;
     }
+  }
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
     .quarterWidth .column {
       max-width: 50% !important;
     }
@@ -77,9 +79,7 @@
     .sixthWidth .fivesixthWidth {
       max-width: 83.333333333333333333333333333333% !important;
     }
-    .mobileErase {
-      display:none !important;
-    }
+
   }
 
  </style>
@@ -87,7 +87,7 @@
 
  <!--[if (gte mso 9)|(IE)]>
   <style type="text/css">
-    body, table, td, .webfont , .webfont_subtitle , .webfont_title {
+    body, table, td, .webfont , .webfont_subtitle , .webfont_title, a.webfont_title {
       font-family: Arial, Helvetica, sans-serif !important;
       font-family: Arial, Helvetica, sans-serif;
     }
