@@ -79,9 +79,8 @@ The OPTIONS Article field requires a multi selection list:
 | DESKTOP_RIGHT | Reorder blocks in this row 'right to left' | |
 | TITLE_LINE | Short line above Title | |
 | DESKTOP_FULLWIDTH | stretch fullwidth article on desktop | |
-| MOBILE_NO_MARGIN | remove margins on mobile | |
-| DESKTOP_ONLY | Show only on Desktop | |
-| MOBILE_ONLY | Show only on mobile | |
+| MOBILE_NO_MARGIN_TOP | remove top margin on mobile | |
+| MOBILE_NO_MARGIN_BOTTOM | remove bottom margin on mobile | |
 
 
 The options are saved with "|" in the database. If a key is defined, then it's checked in SIM.
