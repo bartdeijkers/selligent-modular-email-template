@@ -130,6 +130,12 @@ The TITLE_COLOR Article field requires a single selection list:
 #### **BUTTON_PRESET**
 ---------------
 
+There are 2 supported methods to apply button presets to field BUTTON_PRESET
+
+**1 By BUTTON_PRESET\MAIN _index value
+
+**2 By Pipe Separated values:
+
 example DEFAULT_BUTTON_PRESET
 ```
 200px|26px|#ffffff|null|#000000|13px|#000000|13px|center|null|16px|right|null|13px|null|13px|sans-serif|font-weight:bold;
